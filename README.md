@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @AbhishekSingh
 - 👀 Right now I'm interested in C
 - 🌱 I’m currently learning C
-- 💞️ I’m collaborate with my better self
+- 💞️ I’m collaborating with my better self
 - 📫 How to reach me abhishek120106@gmail.com
