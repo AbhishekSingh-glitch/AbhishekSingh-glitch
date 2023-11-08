@@ -10,3 +10,11 @@ int main ()
     printf("result %d",c);
     return 0;
     }
+// OR
+/*{
+        int x;
+        int y;
+        scanf("%d%d",&x,&y);
+        printf("%d",x+y);
+        return 0;
+    }*/
