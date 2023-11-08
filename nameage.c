@@ -1,10 +1,10 @@
 #include<stdio.h>
 int main()
 {
-char name [30];
+char name;
 int age ;
 printf("name");
-scanf("%s",& name);
+scanf("%c",& name); //print only 1 char
 printf("age");
 scanf("%d",& age);
 return 0;
