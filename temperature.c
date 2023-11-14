@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 
-celsius to fahrenheit
+//celsius to fahrenheit
 /*{
     float c;
     scanf("%f",&c); //c is celsius
@@ -10,7 +10,7 @@ celsius to fahrenheit
     return 0;
 }*/
 
-fahrenheit to celsius
+//fahrenheit to celsius
 /*{
     float f;
     scanf("%f",&f);
