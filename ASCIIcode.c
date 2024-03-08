@@ -4,7 +4,7 @@ inr main ()
 //ASCII to Character
 /*{
     int ascii;
-    printf("Enter ASCII code:");
+    printf("Enter ASCII code: ");
     scanf("%d",&ascii);
     printf("%d(ASCII) = %c(corresponding character)",ascii,ascii);
     return 0;
