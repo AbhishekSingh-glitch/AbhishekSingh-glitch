@@ -1,5 +1,5 @@
 #include <stdio.h>
-inr main ()
+int main ()
 
 //ASCII to Character
 /*{
