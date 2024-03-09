@@ -192,9 +192,35 @@ int main()
 // 24 C Program to accept a year and check the given year is leap or not by using ternary 
 
 // 25 C Program to accept a character in the uppercase and print in lower case
+{
+    char a;
     
+    scanf("%c",&a);
+    int b=a;
+    
+    if(a>='A'&&a<='Z'){
+        b+=32;
+        printf("%c",b);
+    }
+    return 0;
+}
 // 26 C Program to accept a character in any case and print in another case.
+ {
+    char a;
     
+    scanf("%c",&a);
+    int b=a;
+    
+    if(a>='A'&&a<='Z'){
+        b+=32;
+        printf("%c",b);
+    }
+    else if(a>='A'&&a<='Z'){
+        b+=32;
+        printf("%c",b);
+    }
+    return 0;
+}
 // 27 C Program to natural number from 1 to 10 by using while loop
 {
     int a=1;
@@ -296,7 +322,19 @@ add(){
 // 37 C Program to accept a number and check the given number Armstrong or not (Processill
     
 // 38 C Program to accept a number and print the sum of given and Reverse number
-    
+{
+    int a,n,r,b;
+    scanf("%d", &a);
+    while (a != 0) {
+        r = a % 10;
+        b = b * 10 +r;
+        n+=r;
+        a /= 10;
+    }
+    printf("sum %d\n", n);
+    printf("reverse %d", b);
+    return 0;
+}  
 // 39 C Program to accept 10 numbers and print first five numbers in original order and print last five numbers in reverse order.
     
 // 40 C Program to accept a string and print the reverse of the given string by using for loop.
@@ -324,9 +362,40 @@ add(){
 // 51 C Program to print "PASCAL TRIANGLE" Process!!. 
     
 // 52 C Program to check whether a given number is perfect or not.
-    
+{
+   int a,n=1,b=0,z=0;
+   scanf("%d",&a);
+   
+   while(a>=n){
+      if(a%n==0){
+       z+=n;
+      }
+      ++n;
+   }
+   z-=a;
+   if(z==a)
+   printf("perfect");
+   else
+   printf("not perfect");
+   
+   return 0;
+} 
 // 53 C Program to check whether a given number is prime number.
-    
+{
+   int a,n=1,b=0;
+   scanf("%d",&a);
+   
+   while(a>=n){
+      if(a%n==0){
+      //  printf("%d ",n);  //for factor
+        ++b;
+      }
+      ++n;
+   }
+   if(b<=2)
+   printf("prime");
+   return 0;
+} 
 // 54 C Program to read in number and orint them in matrixterms in all orders.
     
 // 55 C Program to search an element using binary search
