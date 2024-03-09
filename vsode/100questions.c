@@ -414,7 +414,15 @@ add(){
     
 // 62 C Program to find whether a square matrix is a symmetric b) skew symmetric c) none of two
     
-// 63 C Program to find area of a triangle when there sides are given. 
+// 63 C Program to find area of a triangle when there sides are given.
+{
+	int a,b,c;
+	float s;
+	scanf("%d%d%d",&a,&b,&c);
+	s=(a+b+c)/2;
+	s= sqrt( (s*(s-a)*(s-b)*(s-c) ));
+	printf("%f",s);
+}
     
 // 64 C Program to print Armstrong number between 1-500.
 
