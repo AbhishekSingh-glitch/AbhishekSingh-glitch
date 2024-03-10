@@ -164,6 +164,15 @@ int main()
     return 0;
 }
 // 14 C Program to print 1 to 10 mathematical tables.
+{
+   for (int i = 1; i <= 10; ++i) {
+       printf(" ");
+       for (int j = 1; j <= 10; ++j) {
+           printf("%d ", i * j);
+       }
+   printf("\n");
+   }
+}
 
 // 15 C Program to print fibonacci series.
     
