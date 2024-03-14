@@ -485,7 +485,18 @@ add(){
 // 77 C Program to print a frequency distribution table for a dass ul 20-students in the foliowing format. The marks range form 1-25.
     
 // 78 C Program to accept values into an array and print array in reverse and original format by using three different functions.
-    
+{
+    int a[]={1,2,3,4,5},i=0;
+    while(i<5){
+        scanf("%d",&a[i]);
+        i++;
+    }
+    i-=1;
+    while(i>=0){
+        printf("reverse\n%d\n",a[i]);
+        i--;
+    }
+}
 // 79 C Program to Becept vilues into smale dimensional array and print the array in reverse by using pointers
     
 // 80 C Program to read a string and print the mimber of characters in each word of the string
