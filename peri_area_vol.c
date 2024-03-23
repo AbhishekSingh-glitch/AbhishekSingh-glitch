@@ -36,13 +36,19 @@ int main ()
         printf("perimeter %.2f\narea %.2f",2*(l[i]+l[i+1]),l[i]*l[i+1]);
     }
     // cuboid
+    
     {
-        float l[2]; int i;
-        printf("Enter sides of cuboid\n");
-        for(i=0;i<=2;i++)
-        scanf("%f",&l[i]);
-        printf("volume %.2f\nTSA %.2f\nLSA %.2f",4*s*s,2(l*b+b*h+h*l),2*h(l+));
-    }
+  float l[3];
+  int i;
+  printf("Enter sides of culoid\n");
+  for (i = 0; i < 3; i++)
+    scanf("%f", &l[i]);
+  i = 0;
+  printf("volume %.2f\n", l[i] * l[i + 1] * l[i + 2]);
+  printf("TSA %.2f\n", 2 * (l[i] * l[i + 1] + l[i + 1]* l[i + 2] +l[i]*l[i+2] ));
+  printf("LSA %.2f\n", 2 * l[i + 2] * (l[i] + l[i + 1]));
+}
+
     // triangle
     {
         float s[3];
