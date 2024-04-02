@@ -9,13 +9,13 @@ int main ()
 }*/
 // done
 /*{
-    int n,count;
+    int n,c;
     float sum =0,x,avg;
     printf("enter how many number\n");
     scanf("%d",&n);
-    for (count=1; count<=n; count++)
+    for (c=1; c<=n; c++)
     {
-        printf("x= ");
+        printf("x%d= ",c);
         scanf("%f",&x);
         sum += x;
     }
