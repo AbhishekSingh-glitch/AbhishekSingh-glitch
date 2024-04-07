@@ -161,15 +161,15 @@ int main()
 }*/
 
 /*{
-    char a,z;
+    char a;
     
-    scanf("%d",&a);
+    scanf("%c",&a);
 
-    if(a>=a||a<=z)
+    if(a>='a'&&a<='z')
     {
         printf("character");
     }
-    if(||0==a||a==9||0==a||a==9||0==a||a==9||0==a||a==9||0==a)
+    else if(a=='0'||a=='1'|| a=='2' ||a=='3' ||a== '4'||a=='5'|| a=='6' ||a=='7'||a=='8' ||a=='9')
     {
         printf("Number");
     }
@@ -178,7 +178,7 @@ int main()
         printf("special character");
     }
     return 0;
-}*/  //wrong
+}*/
 
 /*{
     float maths,english,hindi,sst,science;
