@@ -119,7 +119,21 @@
 // 32 C Program to accept a string and count no of capital letters, no. of small fetters and no, of special characters
 
 // 34 C Program to print prime numbers between 1 to 100
+{
+  int a;
 
+  for (int i=2; i<=100; i++) {
+    a = 0;
+    
+    for (int j=2; j<=i/2; ++j)
+      if (i%j == 0) 
+        a = 1;
+
+    if (a == 0)
+      printf("%d\n", i);
+  }
+  return 0;
+}
 // 37 C Program to accept a number and check the given number Armstrong or not (Processill
 
 // 54 C Program to read in number and orint them in matrixterms in all orders.
