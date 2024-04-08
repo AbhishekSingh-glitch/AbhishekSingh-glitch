@@ -46,7 +46,7 @@ int main()
     scanf("%d",&b);
     printf("Enter a no. ");
     scanf("%d",&c);
-
+// a>b&&a>c? printf("%d",a):b>c?printf("%d",b):printf("%d",c);
     if(a>b){
         if(a>c){
             printf("%d",a);}
