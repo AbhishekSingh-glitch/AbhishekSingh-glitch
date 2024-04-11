@@ -46,7 +46,7 @@ int main()
     scanf("%d",&b);
     printf("Enter a no. ");
     scanf("%d",&c);
-// a>b&&a>c? printf("%d",a):b>c?printf("%d",b):printf("%d",c);
+
     if(a>b){
         if(a>c){
             printf("%d",a);}
@@ -65,7 +65,7 @@ int main()
     }
     else{
             printf("%d",c);
-        }
+    }
 
 }
 // 5 C Program To Read & Number And Find Whether The Given Number is Even Or Odd
@@ -107,15 +107,22 @@ int main()
 
 // 9 C Program to accept a number and check the given number is Armstrong or not.
 {
-    int a,b,c=0;
-    printf("enter an no. to check armstrong or not\n");
-    scanf("%d",&a);
-    while(a!=0){
-       ++c;
-       a/=10;
-        
+    int n,a,b,sum=0;
+    scanf("%d",&n);
+    a=n;
+    while(n>0) {
+        b=n%10;
+        sum+=pow(b,3);
+        n/=10;
     }
-}// not completed
+    if (a==sum) {
+        printf("Armstrong number\n");
+    }
+    else {
+        printf("not an Armstrong number");
+    }
+    return 0;
+}
 // 10 C Program to print ODD numbers from 1 to 10
 {
     int a;
@@ -165,27 +172,114 @@ int main()
 }
 // 14 C Program to print 1 to 10 mathematical tables.
 {
-   for (int i = 1; i <= 10; ++i) {
-       printf(" ");
-       for (int j = 1; j <= 10; ++j) {
-           printf("%d ", i * j);
-       }
-   printf("\n");
-   }
+    int n;
+    int i;
+    printf("Which table you want\n");
+    scanf("%d",&n);
+    for(i=n;i<=n*10;i=i+n)  //increase the zeroes you want
+    {
+        printf("%d\n",i);
+    }
+    return 0;
 }
-
 // 15 C Program to print fibonacci series.
-    
+{
+    int n, a = 0, b = 1, c;
+
+    printf("Enter the number of terms: ");
+    scanf("%d", &n);
+
+    printf("Fibonacci Series:\n");
+
+    for (int i = 0; i < n; i++) {
+        if (i <= 1)
+            c = i;
+        else {
+            c = a + b;
+            a = b;
+            b = c;
+        }
+        printf("%d ", c);
+    }
+
+    return 0;
+}
 // 16 C Program to print numeric pyramid
-    
-//17 C Program to print numerical pyramid II.
+{
+    int a=5,b=1;                       
+    for(int i=0;i<a;i++){
+        for(int j=a;j>i;j--) 
+        printf(" ");              
+        for(int j=0;j<=i;j++){    
+            printf("%d ",b);
+        }     
+        b++;
+        printf("\n");
+    }
+}
+// 17 C Program to print numerical pyramid II.
     
 // 18 C Program to print numerical diamond.
-    
+{
+    int a=4,b=1; 
+      for(int i=0;i<=a;i++){
+        for(int j=a;j>i;j--)      
+        printf(" ");              
+        for(int j=0;j<=i;j++){    
+            printf("%d ",b);         
+        }    
+        b++;                    
+        printf("\n");      
+    }             
+    b-=2;                
+    for(int i=0;i<a;i++){         
+        for(int j=0;j<=i;j++)     
+        printf(" ");              
+        for(int j=a;j>i;j--){    
+            printf("%d ",b);       
+        } 
+        b--;                        
+        printf("\n");
+    }                  
+}
 // 19 C Program to print character pyramid.
-    
+{
+    int a=5; 
+    char b='A';
+    for(int i=0;i<a;i++){
+        for(int j=a;j>i;j--)     
+        printf(" ");              
+        for(int j=0;j<=i;j++){    
+            printf("%c ",b);         
+        }         
+        b++;//  * * * * *
+        printf("\n");
+    }
+}
 // 20 C Program to print character diamond.
-    
+{
+    int a=4;
+    char b='A'; 
+      for(int i=0;i<=a;i++){
+        for(int j=a;j>i;j--)    
+        printf(" ");              
+        for(int j=0;j<=i;j++){    
+            printf("%c ",b);         
+        }    
+        b++;                     
+        printf("\n");             
+    }             
+    b-=2;                
+    for(int i=0;i<a;i++){      
+        for(int j=0;j<=i;j++)     
+        printf(" ");              
+        for(int j=a;j>i;j--){    
+            printf("%c ",b);       
+        } 
+        b--;                        
+        printf("\n");
+    }                  
+}
 // 21 C Program to find biggest of two no by using ternary numbers 
 {
     int a,b;
@@ -195,9 +289,9 @@ int main()
     return 0;
 }
 // 22 C Program to find biggest of four no by using ternary numbers
-    
+
 // 23 C Program to print smallest of four no by using ternary operators
-    
+
 // 24 C Program to accept a year and check the given year is leap or not by using ternary 
 
 // 25 C Program to accept a character in the uppercase and print in lower case
@@ -214,7 +308,7 @@ int main()
     return 0;
 }
 // 26 C Program to accept a character in any case and print in another case.
- {
+{
     char a;
     
     scanf("%c",&a);
@@ -302,7 +396,21 @@ int main()
     return 0;
 }
 // 34 C Program to print prime numbers between 1 to 100
+{
+  int a;
+
+  for (int i=2; i<=100; i++) {
+    a = 0;
     
+    for (int j=2; j<=i/2; ++j)
+      if (i%j == 0) 
+        a = 1;
+
+    if (a == 0)
+      printf("%d\n", i);
+  }
+  return 0;
+}
 // 35 C Program to accept two numbers and print sum of two numbers by using functions 
 {
     printf("enter two no. to add\n");
@@ -343,7 +451,7 @@ add(){
     printf("sum %d\n", n);
     printf("reverse %d", b);
     return 0;
-}  
+} 
 // 39 C Program to accept 10 numbers and print first five numbers in original order and print last five numbers in reverse order.
     
 // 40 C Program to accept a string and print the reverse of the given string by using for loop.
@@ -388,7 +496,7 @@ add(){
    printf("not perfect");
    
    return 0;
-} 
+}  
 // 53 C Program to check whether a given number is prime number.
 {
    int a,n=1,b=0;
@@ -404,7 +512,7 @@ add(){
    if(b<=2)
    printf("prime");
    return 0;
-} 
+}
 // 54 C Program to read in number and orint them in matrixterms in all orders.
     
 // 55 C Program to search an element using binary search
@@ -423,15 +531,7 @@ add(){
     
 // 62 C Program to find whether a square matrix is a symmetric b) skew symmetric c) none of two
     
-// 63 C Program to find area of a triangle when there sides are given.
-{
-	int a,b,c;
-	float s;
-	scanf("%d%d%d",&a,&b,&c);
-	s=(a+b+c)/2;
-	s= sqrt( (s*(s-a)*(s-b)*(s-c) ));
-	printf("%f",s);
-}
+// 63 C Program to find area of a triangle when there sides are given. 
     
 // 64 C Program to print Armstrong number between 1-500.
 
@@ -479,7 +579,23 @@ add(){
     return 0;
 }
 // 75 C Program to find maximum and minimum of entered 'n' number using arrays.
-    
+{
+    int a[],b,l=a[1];
+    printf("Enter how many numbers to compare");
+    scanf("%d",&b);
+    while(i<b){
+        scanf("%d",&a[i]);
+        ++i;
+    }
+    i=0;
+    while(i<b){
+        if(a[i]>l)
+        l=a[i];
+        ++i;
+    }
+    printf("%d",l);
+}
+
 // 76 C Program to print the following series until the sum exceeds 2.6 term value exceeds 1.5 x+x2/21+x3/31+.......
     
 // 77 C Program to print a frequency distribution table for a dass ul 20-students in the foliowing format. The marks range form 1-25.
