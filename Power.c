@@ -51,10 +51,7 @@ return 0;
 #include<stdio.h>
 int main()
 {
-int a;
-int b;
-int c=1;
-int d=1;
+int a, b,c=1, d=1;
 
 scanf("%d%d",&a,&b);
 while(c<=b){
