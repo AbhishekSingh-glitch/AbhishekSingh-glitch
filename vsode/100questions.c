@@ -402,7 +402,7 @@ int main()
   for (int i=2; i<=100; i++) {
     a = 0;
     
-    for (int j=2; j<=i/2; ++j)
+    for (int j=2; j<=i/2/*i-1*/; ++j)
       if (i%j == 0) 
         a = 1;
 
