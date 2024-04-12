@@ -174,6 +174,22 @@
 //   BAB
 //  CBABC
 // DCBABCD
+#include <stdio.h>
+
+int main()
+{
+    int i,j,n;
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        for(int j=n;j>i;j--)
+        printf(" ");
+        for(j=i+1-1;j>0;j--) printf("%d",j);
+        
+        printf("\n");
+    }
+    return 0;
+}
 
 // Write a C program to print the following Pattern.
 //    1
