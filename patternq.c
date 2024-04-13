@@ -242,7 +242,7 @@ int main(){
         b=a-i;
         for(int k=1;k<a;k++){
         if(b>0) printf("%d",b); --b;}
-        
+
         printf("\n");
     }
     return 0;
@@ -283,5 +283,3 @@ int main(){
 //   *  *  *
 //    * * *
 //      *
-
-
