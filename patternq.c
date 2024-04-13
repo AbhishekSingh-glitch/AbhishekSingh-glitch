@@ -221,7 +221,40 @@
 // 123 321
 // 12   21
 // 1     1
+#include<stdio.h>
+int main(){
+    printf("Enter a no.");
+    int a,b=1; 
+    scanf("%d",&a);
+    
+    while ( b<a){ 
+        printf("%d",b); 
+        b++;}
+        while ( b>0){ 
+        printf("%d",b); 
+        b--;}     
+    printf("\n");
 
+    for(int i=1;i<a;i++){
+        for(int j=1;j<a;j++) 
+        if(i+j<=a)  printf("%d",j);
+
+        for(int j=0;j<i;j++)
+        printf(" ");    
+
+       for(int j=1;j<i;j++)
+        if(i>1)  
+        printf(" ");
+
+        b=a-i;
+        for(int k=1;k<a;k++){
+        if(b>0)
+        printf("%d",b);
+        --b;}
+        printf("\n");
+    }
+    return 0;
+}
 // Write a C program to print the following Pattern.
 // ABCDEFG
 // ABC EFG
@@ -258,3 +291,5 @@
 //   *  *  *
 //    * * *
 //      *
+
+
