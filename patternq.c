@@ -1,4 +1,4 @@
-// * * * * 
+// * * * *            //done
 // * * * *
 // * * * *
 // * * * *
@@ -13,7 +13,7 @@
 //     }
 // }
 
-// 1 1 1 1 
+// 1 1 1 1            //done
 // 2 2 2 2 
 // 3 3 3 3  
 // 4 4 4 4
@@ -28,7 +28,7 @@
 //     }
 // }
 
-//  1 2 3 4 
+//  1 2 3 4        //done
 //  1 2 3 
 //  1 2 
 //  1
@@ -44,7 +44,7 @@
 //     }
 // }
 
-//  A 
+//  A             //done
 //  A B 
 //  A B C 
 //  A B C D
@@ -59,7 +59,7 @@
 //     }
 // }
 
-//  1 
+//  1             //done
 //  A B 
 //  1 2 3 
 //  A B C D 
@@ -67,29 +67,51 @@
 // #include<stdio.h>
 // int main(){
 //     char a='A';
-//     for(int i=1;i<=4;i++){
-//         for(int j=1;j<=;j++){
-
+//     int b;
+//     printf("Enter length to print ");
+//     scanf("%d",&b);
+//     for(int i=1;i<=b;i++){
+//         a='A';
+//         for(int j=1;j<=i;j++){
+//             if(i%2==0) {  printf("%c ",a); ++a; }
+//             else printf("%d ",j);
 //         }
-        
 //         printf("\n");
 //     }
 // }
 
-// * 
+// *               //done
 // * * 
 // * * * 
 // * * * * 
 // * * * 
 // * *  
 // * 
+// #include<stdio.h>
+
+// int main (){
+//     int a;              
+//     printf("Enter length to print ");
+//     scanf("%d",&a);       
+//     for(int i=0;i<a;i++){       
+//         for(int j=0;j<=i;j++){    
+//             printf("* ");        
+//         }             
+//         printf("\n");
+//     }
+//     for(int i=0;i<a;i++){
+//         for(int j=a-1;j>i;j--)   
+//             printf("* ");
+//         printf("\n");
+//     } 
+// }
 
 // * * * *
 // *     *
 // *     *
 // * * * *
 
-//  1 
+//  1            //done
 //  1 2 
 //  1 2 3 
 //  1 2 3 4
@@ -105,7 +127,7 @@
 // }
 
 
-// A
+// A             //done
 // AB
 // ABC
 // ABCD
@@ -120,7 +142,7 @@
 //     }
 // }
 
-// 1
+// 1                    //done
 // 2 1
 // 3 2 1
 // 4 3 2 1
@@ -140,7 +162,7 @@
 
 // Write a C program to print the following Pattern.
 //    1
-//   123
+//   123                 //done
 //  12345
 // 1234567
 // #include<stdio.h>
@@ -162,7 +184,7 @@
 
 // Write a C program to print the following Pattern.
 //    A 
-//   ABC
+//   ABC         //done
 //  ABCDE
 // ABCDEFG
 // #include<stdio.h>
@@ -185,7 +207,7 @@
 
 // Write a C program to print the following Pattern.
 //    A 
-//   BAB
+//   BAB         
 //  CBABC
 // DCBABCD
 // #include <stdio.h>
@@ -217,36 +239,37 @@
 //   * *
 //    *
 
-// 1234321
+// 1234321              //done
 // 123 321
 // 12   21
 // 1     1
-#include<stdio.h>
-int main(){
-    printf("Enter a no.");
-    int a,b=1; 
-    scanf("%d",&a);
+// #include<stdio.h>
+// int main(){
+//     printf("Enter a no.");
+//     int a,b=1; 
+//     scanf("%d",&a);
     
-    while ( b<a){ printf("%d",b); b++;}
-    while ( b>0){ printf("%d",b); b--;}     
-    printf("\n");
+//     while ( b<a){ printf("%d",b); b++;}
+//     while ( b>0){ printf("%d",b); b--;}     
+//     printf("\n");
 
-    for(int i=1;i<a;i++){
-        for(int j=1;j<a;j++) 
-        if(i+j<=a)  printf("%d",j);
+//     for(int i=1;i<a;i++){
+//         for(int j=1;j<a;j++) 
+//         if(i+j<=a)  printf("%d",j);
 
-        for(int j=0;j<i;j++) printf(" ");    
+//         for(int j=0;j<i;j++) printf(" ");    
 
-       for(int j=1;j<i;j++) if(i>1) printf(" ");
+//        for(int j=1;j<i;j++) if(i>1) printf(" ");
 
-        b=a-i;
-        for(int k=1;k<a;k++){
-        if(b>0) printf("%d",b); --b;}
+//         b=a-i;
+//         for(int k=1;k<a;k++){
+//         if(b>0) printf("%d",b); --b;}
 
-        printf("\n");
-    }
-    return 0;
-}
+//         printf("\n");
+//     }
+//     return 0;
+// }
+
 // Write a C program to print the following Pattern.
 // ABCDEFG
 // ABC EFG
