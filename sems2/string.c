@@ -1,3 +1,5 @@
+// collection of only char dat type
+/*
 #include <stdio.h>
 #include <string.h>
 
@@ -22,4 +24,11 @@ int main() {
     // puts(d);
     return 0;
 }
+*/
 
+#include<stdio.h>
+int main(){
+    char a[10];
+    for(int i=0;i<10;i++) scanf("%c",&a[i]);
+    for(int i=0;i<10;i++) printf("%c",a[i]);
+}
