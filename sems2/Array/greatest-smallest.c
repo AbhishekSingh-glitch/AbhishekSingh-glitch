@@ -13,6 +13,7 @@
        
 // }
 
+// smallest 
 #include<stdio.h>
 int main(){
     int a[10],l=a[0],i;
