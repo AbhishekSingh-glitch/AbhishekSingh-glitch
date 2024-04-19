@@ -2,6 +2,7 @@
 // * * * *
 // * * * *
 // * * * *
+
 // #include<stdio.h>
 // int main(){
 //     printf("Enter length to sqaure to print ");
@@ -17,6 +18,7 @@
 // 2 2 2 2 
 // 3 3 3 3  
 // 4 4 4 4
+
 // #include<stdio.h>
 // int main(){
 //     printf("Enter length to sqaure to print ");
@@ -32,6 +34,7 @@
 //  1 2 3 
 //  1 2 
 //  1
+
 // #include<stdio.h>
 // int main(){
 //     printf("Enter length to print ");
@@ -48,6 +51,7 @@
 //  A B 
 //  A B C 
 //  A B C D
+
 // #include<stdio.h>
 // int main(){
 //     printf("Enter length to print ");
@@ -64,6 +68,7 @@
 //  1 2 3 
 //  A B C D 
 //  1 2 3 4 5
+
 // #include<stdio.h>
 // int main(){
 //     char a='A';
@@ -87,8 +92,8 @@
 // * * * 
 // * *  
 // * 
-// #include<stdio.h>
 
+// #include<stdio.h>
 // int main (){
 //     int a;              
 //     printf("Enter length to print ");
@@ -107,9 +112,10 @@
 // }
 
 // * * * *
-// *     *
+// *     *               //done
 // *     *
 // * * * *
+
 // #include <stdio.h>
 // int main() {
 //   int a;
@@ -127,6 +133,7 @@
 //  1 2 
 //  1 2 3 
 //  1 2 3 4
+
 // #include<stdio.h>
 // int main(){
 //     printf("Enter length to print ");
@@ -143,6 +150,7 @@
 // AB
 // ABC
 // ABCD
+
 // #include<stdio.h>
 // int main(){
 //     printf("Enter length to print ");
@@ -158,15 +166,15 @@
 // 2 1
 // 3 2 1
 // 4 3 2 1
-// #include <stdio.h>
 
+// #include <stdio.h>
 // int main()
 // {
 //     int i,j,n;
 //     scanf("%d",&n);
 //     for(i=1;i<=n;i++)
 //     {
-//         for(j=i+1-1;j>0;j--) printf("%d ",j);
+//         for(j=i;j>0;j--) printf("%d ",j);
 //         printf("\n");
 //     }
 //     return 0;
@@ -177,6 +185,7 @@
 //   123                 //done
 //  12345
 // 1234567
+
 // #include<stdio.h>
 // int main(){
 //     printf("Enter a no.");
@@ -199,6 +208,7 @@
 //   ABC         //done
 //  ABCDE
 // ABCDEFG
+
 // #include<stdio.h>
 // int main(){
 //     printf("Enter a no.");
@@ -207,7 +217,6 @@
 //         char a='A';
 //         for(int j=b+(b-2);j>i;j-=2)
 //         printf(" ");
-
 //         for(int j=1;j<=i;j++){
 //         printf("%c",a);
 //         a++;
@@ -221,21 +230,19 @@
 //    A 
 //   BAB         
 //  CBABC
-// DCBABCD
-// #include <stdio.h>
+// DCBABCD                    // done
 
-// int main()
-// {
-//     int i,j;
-//     char a='A';
+// #include<stdio.h>
+// int main(){
+//     printf("Enter a no.");
+//     int a,b=1; 
+//     scanf("%d",&a);
     
-//     for(i=1;i<=4;i++){
-//         for(int j=0;j<i;j++) printf(" ");
-
-//         for(int k=0;k<i;k++){ printf("%c",a); ++a;}
-        
-//         printf("\n");
-// }
+//     for(int i=1;i<=a;i++){
+//         for(int j=a;j>=i+1;j--) printf(" ");
+//         for(int j=i;j>0;j--) printf("%c",j+64);
+//         for(int j=1;j<i;j++) if(i>1) printf("%c",j+65);
+//         printf("\n");}
 //     return 0;
 // }
 
@@ -244,6 +251,7 @@
 //   2 2               
 //  3   3
 // 4     4                      //done
+
 // #include<stdio.h>
 // int main(){
 //     printf("Enter a no.");
@@ -273,6 +281,7 @@
 //  *   *
 //   * *
 //    *
+
 // #include <stdio.h>
 // int main() {
 //   int a;
@@ -297,6 +306,7 @@
 // 123 321
 // 12   21
 // 1     1
+
 // #include<stdio.h>
 // int main(){
 //     printf("Enter a no.");
@@ -329,6 +339,7 @@
 // ABC EFG
 // AB   FG
 // A     G                    //wrong but too close
+
 // #include<stdio.h>
 // int main(){
 //     printf("Enter a no.");
