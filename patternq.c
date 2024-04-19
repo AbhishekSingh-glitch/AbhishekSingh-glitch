@@ -202,6 +202,17 @@
 //         printf("\n");
 //     }
 // }
+        //OR
+// #include <stdio.h>  
+// int main() {
+//     printf("Enter a no.");
+//     int a,b=1; 
+//     scanf("%d",&a);
+//     for(int i=0;i<a;i++){
+//         for(int j=a-1;j>i;j--)  printf(" ");
+//         for(int j=1;j<=i+i+1;j++)  printf("%d",j);
+//         printf("\n");} 
+// }
 
 // Write a C program to print the following Pattern.
 //    A 
