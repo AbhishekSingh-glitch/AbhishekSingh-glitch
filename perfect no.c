@@ -1,5 +1,4 @@
-// factor of any no. gets sum except that no. 
-// and = to that no. is perfect number
+// factor of any no. gets sum except that no. and = to that no. is perfect number
 
 #include<stdio.h>
 int main()
