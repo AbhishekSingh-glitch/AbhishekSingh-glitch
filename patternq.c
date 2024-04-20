@@ -290,7 +290,7 @@
 // Write a C program to print the following Pattern.
 // *     *
 //  *   *
-//   * *
+//   * *                          //done
 //    *
 
 // #include <stdio.h>
@@ -386,35 +386,35 @@
 //   * *
 //    *           //done
 
-#include <stdio.h>
-int main() {
-  printf("Enter a no.");
-  int a, b = 1;
-  scanf("%d", &a);
+// #include <stdio.h>
+// int main() {
+//   printf("Enter a no.");
+//   int a, b = 1;
+//   scanf("%d", &a);
 
-  for (int i = 0; i < a - 1; i++) {
-    for (int j = a; j > i + 1; j--)
-      printf(" ");
+//   for (int i = 0; i < a - 1; i++) {
+//     for (int j = a; j > i + 1; j--)
+//       printf(" ");
 
-    if (i >= 1) printf("*");
-    for (int j = 1; j < i + i; j++)
-      if (i > 0) printf(" ");
-    if (i == 0) printf("*");
-    if (i >= 1) printf("*");
-    b++;
+//     if (i >= 1) printf("*");
+//     for (int j = 1; j < i + i; j++)
+//       if (i > 0) printf(" ");
+//     if (i == 0) printf("*");
+//     if (i >= 1) printf("*");
+//     b++;
 
-    printf("\n");
-  }
-  for (int i = 1; i <= a; i++) {
-    for (int j = 1; j <= (a * 2) - 1; j++)
-      if (i == j) printf("*");
-      else if (i + j == a * 2) printf("*");
-      else printf(" ");
+//     printf("\n");
+//   }
+//   for (int i = 1; i <= a; i++) {
+//     for (int j = 1; j <= (a * 2) - 1; j++)
+//       if (i == j) printf("*");
+//       else if (i + j == a * 2) printf("*");
+//       else printf(" ");
 
-    printf("\n");
-  }
-  return 0;
-}
+//     printf("\n");
+//   }
+//   return 0;
+// }
 
 // Write a C program to print the following Pattern.
 // *******
