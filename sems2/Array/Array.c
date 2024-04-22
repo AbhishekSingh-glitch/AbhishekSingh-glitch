@@ -108,6 +108,23 @@ int main(){
 // }
 
 #include<stdio.h>
+#include<limits.h>
 int main(){
-    
+    int a[10],m=0,u=0,l=INT_MIN,k=INT_MIN;
+
+    for(int i=0;i<5;i++)
+        scanf("%d",&a[i]);
+
+    A:
+    for(int i=0;i<5;i++){
+        if(l<a[i])
+            l=a[i];
+        u++;
+
+        if(k<a[i]&&a[i]!=l)
+            k=a[i];
+    }
+    if(u==5&&m==0){goto A; m++;}
+
+    printf("%d ",k);
 }
