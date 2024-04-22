@@ -456,6 +456,32 @@
 //     return 0;
 // }
 
+// OR
+
+// #include<stdio.h>
+// int main(){
+//     printf("Enter a no.");
+//     int a, j=1;
+//     scanf("%d",&a);
+    
+//     while ( j<2*a){ printf("%c",j+64); j++;}
+      
+//     printf("\n");
+
+//     for(int i=1;i<a;i++){
+//         for( j=1;j<a;j++) 
+//         if(i+j<=a)  printf("%c",j+64);
+
+//         for(int l=1;l<i+i;l++) printf(" ");    
+
+//         for(int k=j+i;k<a*2;k++)
+//         printf("%c",k+64);
+
+//         printf("\n");
+//     }
+//     return 0;
+// }
+
 // Write a C program to print the following Pattern.
 //    *
 //   * *
@@ -468,7 +494,7 @@
 // #include <stdio.h>
 // int main() {
 //   printf("Enter a no.");
-//   int a, b = 1;
+//   int a;
 //   scanf("%d", &a);
 
 //   for (int i = 0; i < a - 1; i++) {
@@ -520,6 +546,33 @@
 // **   **
 // *** ***
 // *******
+
+
+// #include <stdio.h>
+// int main()
+// {
+//     int i = 0,j = 0;
+//     int  a;
+//     printf("Enter the no. ");
+//     scanf("%d",&a);
+
+//     for(i=1; i<=a ;++i){
+//         for(j=a; j >=i; --j)    printf("*");
+//         for(j=2; j<=(2*i)-1; ++j)    printf(" ");
+//         for(j=i; j <= a; ++j)    printf("*");
+        
+//         printf("\n");
+//     }
+//     for(i=1; i <=a ; ++i){
+//         for(j=1; j <=i; ++j)    printf("*");
+//         for(j=(2*i)-1; j<=(2*a)-2; ++j)    printf(" ");
+//         for(j=1; j <= i; ++j)    printf("*");
+        
+//         printf("\n");
+//     }
+
+//     return 0;
+// }
 
 
 // Write a C program to print the following Pattern.
