@@ -107,24 +107,76 @@ int main(){
 //     printf("%d",cnt);
 // }
 
-#include<stdio.h>
-#include<limits.h>
-int main(){
-    int a[10],m=0,u=0,l=INT_MIN,k=INT_MIN;
 
-    for(int i=0;i<5;i++)
-        scanf("%d",&a[i]);
+// #include<stdio.h>
+// #include<limits.h>
+// int main(){
+//     int a[10],m=0,u=0,l=INT_MIN,k=INT_MIN;
 
-    A:
-    for(int i=0;i<5;i++){
-        if(l<a[i])
-            l=a[i];
-        u++;
+//     for(int i=0;i<5;i++)
+//         scanf("%d",&a[i]);
 
-        if(k<a[i]&&a[i]!=l)
-            k=a[i];
-    }
-    if(u==5&&m==0){goto A; m++;}
+//     A:
+//     for(int i=0;i<5;i++){
+//         if(l<a[i])
+//             l=a[i];
+//         u++;
 
-    printf("%d ",k);
-}
+//         if(k<a[i]&&a[i]!=l)
+//             k=a[i];
+//     }
+//     if(u==5&&m==0){goto A; m++;}
+
+//     printf("%d ",k);
+// }
+
+// #include<stdio.h>
+// void fun(int *a){
+//     printf("%d ",a);
+// }
+// int main (){
+//     int a[]={1,3,2,4,5,6};
+//     fun(a);
+// }
+
+
+// #include<stdio.h>
+// int main(){
+
+// int b,a[]={1,2,3,4,5,6};
+
+// scanf("%d",&b);
+// int n=sizeof(a)/sizeof(int);
+// for(int j=0;j<n;j++)
+// for(int i=j+1;i<n;i++){
+//     if(b==a[j]+a[i]) printf("%d=%d+%d\n",b,a[j],a[i]);
+// }
+
+// }
+
+// duplicate elements
+// #include<stdio.h>
+// int main(){
+// int a[]={1,2,3,4,5,6,6};
+
+// int n=sizeof(a)/sizeof(int);
+// for(int j=0;j<n;j++)
+// for(int i=j+1;i<n;i++)
+//     if(a[j]==a[i]) printf("%d\n",a[j]);
+// }
+
+
+// sum of (even -odd) index
+// #include<stdio.h>
+// int main(){
+
+// int e=0,o=0,a[]={1,2,3,4,5,6};
+
+// int n=sizeof(a)/sizeof(int);
+
+// for(int j=0;j<n;j++)
+//     if(j%2==0)  e+=a[j];  
+//     else o+=a[j];
+
+// printf("%d",e-=o);
+// }
