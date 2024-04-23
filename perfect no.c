@@ -5,16 +5,11 @@ int main()
 {
     int a,b,sum=0;
     scanf("%d",&a);
-    for(b=1;b<a;b++) {
-        if(a%b==0) {
+    for(b=1;b<a;b++) 
+        if(a%b==0)
             sum+=b;
-        }
-    }
-    if (sum==a) {
-        printf("perfect no.");
-    }
-    else {
-        printf("not a perfect no.");
-    }
+    
+    if (sum==a) printf("perfect no.");
+    else printf("not a perfect no.");
     return 0;
 }
