@@ -55,3 +55,26 @@ int main (){
 //         printf("\n");
 //     }
 // }
+
+
+
+// #include <stdio.h>
+// int main() {
+//   int i = 0, j = 0;
+//   int a;
+//   printf("Enter the no. ");
+//   scanf("%d", &a);
+//   for (int i = 1; i < 2 * a; i++) {
+//     for (int j = 1; j <= a; j++) {
+//       if (i + j == a + 1)
+//         printf("*");
+//       else
+//         printf("#");
+        
+//     }
+//     for (int j = 1; j < 2*a; j++)
+//     if(i+j>=2*a-1) if(i>1&&i<=a &&j>a) printf("*");
+//     printf("\n");
+//   }
+//   return 0;
+// }
