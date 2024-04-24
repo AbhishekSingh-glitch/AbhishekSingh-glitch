@@ -180,3 +180,75 @@ int main(){
 
 // printf("%d",e-=o);
 // }
+
+
+// printing reverse of array
+
+// #include <stdio.h>
+// void p(int arr[],int n){
+//   int i = 0;
+//   int j = n - 1;
+//   while (i <= j) {
+//     int temp = arr[i];
+//     arr[i] = arr[j];
+//     arr[j] = temp;
+//     ++i;
+//     --j;
+//   }
+// }
+
+// int main() {
+
+//   int arr[] = {3, -1, 8, 5, 4, 9, 2};
+//   int n = sizeof(arr) / sizeof(int);
+//   for (int i = 0; i < n; ++i)  
+//     scanf("%d ", &arr[i]);
+//   for (int i = 0; i < n; ++i) // actual array
+//     printf("%d ", arr[i]);
+  
+//   printf("\n");
+//   p(arr,n);
+//   for (int i = 0; i < n; ++i) { // after reversing
+//     printf("%d ", arr[i]);
+//   }
+//   return 0;
+// }
+
+// duplicate element
+// #include <stdio.h>
+// int main() {
+//   int b = 0, a[10] ;
+//   for(int i=0;i<10;i++) scanf("%d",&a[i]);
+//   int n = sizeof(a) / sizeof(int);
+//   printf("duplicate elements\n");
+//   for (int j = 0; j < n; j++){
+ 
+//     for (int i = j + 1; i < n; i++)
+    
+//       if (a[j] == a[i] && b != a[j]) {
+//         printf("%d\n", a[i]);
+//         b = a[j];
+//       }
+ 
+// }
+// }
+
+
+#include <stdio.h>
+int main() {
+  int b = 0, a[10],k ;
+  for(int i=0;i<5;i++) scanf("%d",&a[i]);
+  for(int i=0;i<5;i++) printf("%d ",a[i]);
+  int n = sizeof(a) / sizeof(int);
+  scanf("%d",&k);
+
+  for (int j = 0; j < n; j++){
+ 
+    for (int i = j + 1; i < n; i++)
+    
+    
+      }
+  for(int i=0;i<5;i++) printf("%d ",a[i]);
+}
+
+
