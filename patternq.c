@@ -663,43 +663,29 @@
 // OR
 
 // #include <stdio.h>
-// int i, j,a;
-// void bor(){
-// while (i < a) { printf("*"); i++; }
-//   while (i > 1) { printf("*"); i--; }
-// }
-// void bor1(){for (int g = 0; g < 1; g++)  printf("*");}
-
-// void p(){for (int j = 1; j < i; ++j)  if(i<a) printf("*");}
-
+// int i,j,a;
+// void bor(){ while (i <a ) { printf("*"); i++; } while (i > 1) {printf("*"); i--; } }
+// void bor1(){ for (int g = 0; g < 1; g++)  printf("*"); }
+// void p(){ for (int j = 1; j < i; ++j)  if(i<a) printf("*"); }
+// void p1(){ for (j = a-1; j > i; --j)   printf(" "); }
+// void p2(){ for (j = 2; j <= (2 * i); ++j)  printf(" "); }
+// void p3(){ for (j = i+1; j < a; ++j)   printf("*"); }
+// void p4(){ for (j = (2 * i)+1; j < (2 * a); ++j) printf(" "); }
+// void f() { for (i = 1; i < a; ++i) {bor1(); p1(); p2(); p3(); bor1();printf("\n");} }
+// void f1(){ for (i = 2; i < a; ++i) {bor1(); p(); p4(); p(); bor1(); printf("\n");} }
+    
 // int main() {
-  
 //   printf("Enter the no. ");
 //   scanf("%d", &a);
-
 //   bor();
 //   printf("\n");
-//   for (i = 1; i < a; ++i) {
-//     bor1();
-//     for (j = a-1; j > i; --j)   printf("*");
-//     for (j = 2; j <= (2 * i); ++j)  printf(" ");
-//     for (j = i+1; j < a; ++j)   printf("*");
-//     bor1();
-//     printf("\n");
-//   }
-  
-//   for (i = 2; i < a; ++i) {
-//     bor1();
-//     p();
-//     for (j = (2 * i)+1; j < (2 * a); ++j) printf(" ");
-//     p();
-//     bor1();
-//     printf("\n");
-//   }
+//   f();
+//   f1();
 //   i = 0;
-//  bor();
+//   bor();
 //   return 0;
 // }
+
 
 // Write a C program to print the following Pattern.
 //      *
