@@ -735,45 +735,6 @@
 
 // #include <stdio.h>
 // int a;
-// void p1(int i){
-// for (int j = a ; j > i + 1; j--) printf(" ");}
-// void p2(int i){
-//     for (int j = 0; j < 1; j++)
-//     if (i > 0) printf("*");}
-// void p3(int i){
-//     for (int j = 1; j < i; j++) printf(" ");}
-// void p4(int i){
-//     for (int j = a ; j > i+2 ; j--) printf(" ");}
-// void p5(int i){
-//     for (int l = 0; l < 1; l++)
-//             if(i<a -1) printf("*"); }
-// void p6(int i){
-//     for (int j = 0; j < i; j++)  printf(" "); }
-// void p7(int i){
-//     for (int j = 0; j<1; j++) printf("*");}
-// int main() {
-//      printf("Enter a no.");
-     
-//      scanf("%d", &a);
-//      for (int i = 0; i < a-1 ; i++) {
-//         p1(i); p7(i); p3(i);
-//         p2(i); p3(i); p2(i);
-//         printf("\n");
-//      } 
-//      for (int h = 0; h < a+(a-1); h++) printf("*"); 
-//      printf("\n");
-     
-//      for (int i = 1; i < a ; i++) {
-//         p6(i); p7(i); p4(i);
-//         p5(i); p4(i); p5(i); 
-//         printf("\n");
-//         }
-// }
-
-// OR
-
-// #include <stdio.h>
-// int a;
 // void p2(int i){ for (int j=0;j<1;j++) if (i> 1)  printf("*");}
 // void p5(int i){ for (int j=0;j<1;j++) if(i<a-1)  printf("*");}
 // void p7()     { for (int j=0;j<1;j++)            printf("*");}
