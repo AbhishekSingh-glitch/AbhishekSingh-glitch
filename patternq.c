@@ -437,9 +437,8 @@
 //         for(int j=1;j<a;j++) 
 //         if(i+j<=a)  printf("%d",j);
 
-//         for(int j=0;j<i;j++) printf(" ");    
-
-//        for(int j=1;j<i;j++) if(i>1) printf(" ");
+//         for(int j=1;j<i+i;j++) printf(" ");    
+//     //  for(int j=1;j<i;j++) if(i>1) printf(" ");
 
 //          for(int j=a-i;j>0;j--)
 //           printf("%d", j); 
@@ -589,6 +588,28 @@
 //     return 0;
 // }
 
+// OR  by function
+
+// #include <stdio.h>
+// void fu(int i,int a){
+
+//     for (int j = 1; j <= a * 2-1; j++) {
+//      if (i==j||i + j == a * 2)
+//         printf("*");
+//     else
+//         printf(" ");
+//      }
+//     printf("\n");
+//   }
+// int main() {
+//   int a;
+//   scanf("%d", &a);
+// for (int i = a; i >1; i--) 
+// fu(i,a);
+//   for (int i = 1; i <= a; i++) 
+// fu(i,a);
+// }
+
 // Write a C program to print the following Pattern.
 // *******
 // *** ***
@@ -660,7 +681,7 @@
 //   return 0;
 // }
 
-// OR
+// OR  by function
 
 // #include <stdio.h>
 // int i,j,a;
@@ -731,7 +752,7 @@
 //         }
 // }
 
-// OR
+// OR  by function
 
 // #include <stdio.h>
 // int a;
@@ -756,4 +777,20 @@
 //      for (int h=0;h<a+(a-1);h++)                 printf("*");
 //                                                  printf("\n");
 //      g1();
+// }
+
+// OR by function 2nd method
+// #include <stdio.h>
+// void pi(int i,int n) {
+//   for (int j=0;j<n-i;j++)             printf(" ");
+//   if (i<=n)  for(int j=1;j<2*i;j++)
+//      if (j==1||j==2*i-1||i==n||j==i)  printf("*");
+//      else                             printf(" ");
+//                                       printf("\n");
+// }
+// int main() {
+// 	int n;  scanf("%d",&n);
+//   for (int i=1;i<n;i++) pi(i,n);
+//   for (int i=n;i>0;i--) pi(i,n);
+//   return 0;
 // }
