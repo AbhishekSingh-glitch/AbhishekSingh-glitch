@@ -1,3 +1,4 @@
+// of 0,1
 // #include<stdio.h>
 // int main(){
 //     int n,a[]={1,1,0,1,1,0,1,0,0,0,0};
@@ -14,6 +15,7 @@
 //     printf("%d ",ar[i]);
 // }
 
+//OR
 // #include<stdio.h>
 // int main(){
 //     int n,a[]={1,0,0,0,1,1,0,1,1};
@@ -21,18 +23,16 @@
 //     int i=0,j=n-1;
 //     while(i<=j){
 //         if(a[i]==1&&a[j]==0) {
-//            a[i]=0;
-//            a[j]=1;
-//            ++i;--j;}
-//         if(a[i]==0&&a[j]==1){ ++i; --j;}
-//         // if(a[i]==1&&a[j]==1)
-//         --j;
-//         if(a[i]==0&&a[j]==0) 
-//         ++i;
+//             a[i]=0;
+//             a[j]=1;
+//             ++i;--j;}
+//         else if(a[i]==0&&a[j]==1){ ++i; --j;}
+//         else if(a[i]==1&&a[j]==1) --j;
+//         else if(a[i]==0&&a[j]==0) ++i;
        
 //     }
-// for(int i=0;i<n;++i)
-//     printf("%d ",a[i]);
+//     for(int i=0;i<n;++i)
+//         printf("%d ",a[i]);
 // }
 
 //0,1,2
@@ -55,16 +55,30 @@
 //     printf("%d ",ar[i]);   //a[i];
 // }
 // OR
-// 
-#include<stdio.h>
-int main(){
-    int a[]={2,0,1,0,1,2,0,2,1,0}
-    int n=sizeof(a)/sizeof(int);
-    int l=0,m=0,h=n-1;
-    while(m<=h){
-        if(a[m]==2)  ar
-    }
-}
+
+// #include<stdio.h>
+// int main(){
+//    int arr[] = {2,2,0,1,2,1,2,0,2,2,1,2,1,0,1};
+//    int n =sizeof(arr)/sizeof(int);
+//    int l=0,m=0,h=n-1;
+//    while(m<=h){
+//        if(arr[m]==2){
+//            arr[m]=arr[h];
+//            arr[h]=2;
+//            --h;
+//        }
+//        else if(arr[m]==0){
+//            arr[m]=1;arr[l]=0; 
+//            ++m;
+//            ++l;
+//        }
+//        else if(arr[m]==1)  ++m;
+//    }
+//    for(int i=0; i<n; ++i)
+//        printf("%d ",arr[i]);
+//    return 0;
+// }
+
 //asscending 
 // #include<stdio.h>
 // int main(){
