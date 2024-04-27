@@ -4,6 +4,7 @@ int main(){
         int r;
         char n[20];
     } a;
-    scanf("%d %s",&a.r,a.n);  // 1 Abhishek Singh
-    printf("%d %s",a.r,a.n);  // 1 Abhishek
+    scanf("%d",&a.r);
+    scanf("%[^\n]s",a.n);    //%[^\n]s ,so string can take spaces too
+    printf("%d%s",a.r,a.n);
 }
