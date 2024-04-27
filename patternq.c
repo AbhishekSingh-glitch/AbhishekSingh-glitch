@@ -264,7 +264,7 @@
 //         printf("\n");
 //     }
 // }
-        //OR
+//OR
 // #include <stdio.h>  
 // int main() {
 //     printf("Enter a no.");
@@ -333,7 +333,7 @@
 //     for(int i=1;i<=a;i++){
 //         for(int j=a;j>i;j--) printf(" ");
 //         for(int j=i;j>0;j--) printf("%c",j+64);
-//         for(int j=1;j<i;j++) if(i>1) printf("%c",j+65);
+//         for(int j=1;j<i;j++) printf("%c",j+65);
 //         printf("\n");}
 //     return 0;
 // }
