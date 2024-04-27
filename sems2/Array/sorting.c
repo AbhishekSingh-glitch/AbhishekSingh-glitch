@@ -43,19 +43,28 @@
 //     int b=0,c=0,ar[n];
     
 //     for(int j=0;j<n;j++)
-//         if(a[j]==0)
-//         b++;
-//     else if(a[j]==1) c++;
+//         if(a[j]==0)      b++;
+//         else if(a[j]==1) c++;
         
 //     for(int i=0;i<n;i++) 
-//         if(i<b) ar[i]=0;
-//         else if(i<c+b) ar[i]=1;
-//         else    ar[i]=2;
+//         if(i<b)        ar[i]=0;  //a[i]=0;
+//         else if(i<c+b) ar[i]=1;  //a[i]=1;
+//         else           ar[i]=2;  //a[i]=2;
         
 //     for(int i=0;i<n;i++)
-//     printf("%d ",ar[i]);
+//     printf("%d ",ar[i]);   //a[i];
 // }
-
+// OR
+// 
+#include<stdio.h>
+int main(){
+    int a[]={2,0,1,0,1,2,0,2,1,0}
+    int n=sizeof(a)/sizeof(int);
+    int l=0,m=0,h=n-1;
+    while(m<=h){
+        if(a[m]==2)  ar
+    }
+}
 //asscending 
 // #include<stdio.h>
 // int main(){
@@ -83,7 +92,7 @@
 //                 int temp =a[j];
 //                 a[j]=a[j+1];
 //                 a[j+1]=temp;
-//             } 
+//             }
 //     for(int i=0;i<n;i++)
 //     printf("%d ",a[i]);
 // }
@@ -103,23 +112,26 @@
 // for(int i=0;i<s;i++) printf("%d ",k[i]);
 // }
 
-#include<stdio.h>
-int main(){
-    int a[]={12,8,41,60,2,49,16,28,21};
-    int s=sizeof(a)/sizeof(int);
-    int ar[s];
-    for(int i=0;i<s-1;i++){
-        for(int j=i+1;j<s;j++){
-            if(a[i]<a[j]&&a[j-1]<a[j])
-            ar[j-1]=a[j];
-        }
-    }
-    ar[s]=-1;
-    for(int i=0;i<s-1;i++)  printf("%d ",ar[i]);
-}
+// #include<stdio.h>
+// int main(){
+//     int a[]={12,8,41,60,2,49,16,28,21};
+//     int s=sizeof(a)/sizeof(int);
+//     int ar[s];
+//     for(int i=0;i<s-1;i++){
+//         for(int j=i+1;j<s;j++){
+//             if(a[i]<a[j]&&a[j-1]<a[j])
+//             ar[j-1]=a[j];
+//         }
+//     }
+//     ar[s]=-1;
+//     for(int i=0;i<s-1;i++)  printf("%d ",ar[i]);
+// }
 
 
 
 
 
 // next least element 
+
+
+// 
