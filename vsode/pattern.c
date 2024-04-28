@@ -39,242 +39,33 @@
 //     }
 // }
 
-// #include<stdio.h>
 
-// int main (){
-//     int a=5;                       
-//     for(int i=0;i<a;i++){
-//         for(int j=a;j>i;j--)      //      * 
-//         printf(" ");              //     * * 
-//         for(int j=0;j<=i;j++){    //    * * * 
-//             printf("* ");         //   * * * * 
-//         }                         //  * * * * *
-//         printf("\n");
-//     }
-// }
 
-// #include<stdio.h>
 
-// int main (){
-//     int a=5;                       
-//     for(int i=0;i<a;i++){
-//         for(int j=a;j>i;j--)      //          *
-//         printf("  ");             //        * *
-//         for(int j=0;j<=i;j++){    //      * * *
-//             printf("* ");         //    * * * *
-//         }                         //  * * * * *
-//         printf("\n");
-//     }
+
+
+
 // }
 
 
-// #include<stdio.h>
-
-// int main (){
-//     int a=5;                       //  * * * * *
-//     for(int i=0;i<a;i++){          //  * * * *
-//           for(int j=a;j>i;j--){    //  * * * 
-//             printf("* ");          //  * * 
-//         }                          //  * 
-//         printf("\n");
-//     }
-// }
-
-// #include<stdio.h>
-
-// int main (){
-//     int a=5;                       
-//     for(int i=0;i<a;i++){
-//         for(int j=0;j<i;j++)      //  * * * * *
-//         printf(" ");              //   * * * * 
-//         for(int j=a;j>i;j--){     //    * * * 
-//             printf("* ");         //     * * 
-//         }                         //      * 
-//         printf("\n");
-//     }
-// }
-
-// #include<stdio.h>
-
-// int main (){
-//     int a=5;                       
-//     for(int i=0;i<a;i++){
-//         for(int j=0;j<i;j++)      //  * * * * *
-//         printf("  ");             //    * * * * 
-//         for(int j=a;j>i;j--){     //      * * * 
-//             printf("* ");         //        * * 
-//         }                         //          * 
-//         printf("\n");
-//     }
-// }
 
 
-// #include<stdio.h>
-
-// int main (){
-//     int a=5;                      // infinite *
-//     for(int i=0;i<a;i++){         
-//         for(int j=0;j=i;j++){     //because j=i 
-//             printf("* ");         
-//         }                          
-//         printf("\n");
-//     }
-// }
-
-// #include<stdio.h>
-
-// int main (){
-//     int a=4;                
-//     for(int i=0;i<a;i++){
-//         for(int j=0;j<i;j++)      //  * * * * *
-//         printf(" ");              //   * * * * 
-//         for(int j=a;j>=i;j--){    //    * * * 
-//             printf("* ");         //     * * 
-//         }                         //      * 
-//         printf("\n");             //     * *
-//     }                             //    * * *  
-//     for(int i=0;i<=a;i++){        //   * * * *
-//         for(int j=a;j>i;j--)      //  * * * * *
-//         printf(" ");              
-//         for(int j=0;j<=i;j++){    
-//             printf("* ");         
-//         }                         
-//         printf("\n");
-//     }
-// }
-
-// *     *
-//  *   * 
-//   * *  
-//    *   
-//   * *  
-//  *   * 
-// *     *
-// #include <stdio.h>
-// int main() {
-//   int a;
-//   scanf("%d", &a);
-
-//   for (int i = 1; i <= a; i++) {
-
-//     for (int j = 1; j <= a * 2-1; j++) {
-//      if (i==j||i + j == a * 2)
-//         printf("*");
-//     else
-//         printf(" ");
-//      }
-//     printf("\n");
-//   }
-  
-//   for (int i = a-1; i >0; i--) {
-
-//     for (int j = 1; j <= a * 2-1; j++) {
-//      if (i==j||i + j == a * 2)
-//         printf("*");
-//     else
-//         printf(" ");
-//      }
-//     printf("\n");
-//   }
-// }
-
-// #include<stdio.h>
-
-// int main (){
-//     int a=5;                      // *
-//     for(int i=0;i<a;i++){         // * *
-//         for(int j=0;j<=i;j++){    // * * * 
-//             printf("* ");         // * * * *
-//         }                         // * * * * * 
-//         printf("\n");
-//     }
-// }
-
-// #include<stdio.h>
-
-// int main(){
-//     int a=5,b=1;                  // 1
-//     for(int i=0;i<a;i++){         // 2 3
-//         for(int j=0;j<=i;j++){    // 4 5 6
-//             printf("%d ",b++);    // 7 8 9 10
-//         }                         // 11 12 13 14 15
-//         printf("\n");
-//     }
-// }
-
-// #include<stdio.h>
-
-// int main(){
-//     int a=5;                      // 1
-//     for(int i=0;i<=a;i++){        // 1 2 
-//         for(int j=1;j<=i;j++){    // 1 2 3 
-//             printf("%d ",j);      // 1 2 3 4 
-//         }                         // 1 2 3 4 5 
-//         printf("\n");
-//     }
-// }
 
 
-// #include<stdio.h>
 
-// int main (){
-//     int a=4; 
-//       for(int i=0;i<=a;i++){
-//         for(int j=a;j>i;j--)      //      * 
-//         printf(" ");              //     * * 
-//         for(int j=0;j<=i;j++){    //    * * * 
-//             printf("* ");         //   * * * * 
-//         }                         //  * * * * *
-//         printf("\n");             //   * * * *
-//     }                             //    * * *
-//     for(int i=0;i<a;i++){         //     * *
-//         for(int j=0;j<=i;j++)     //      *
-//         printf(" ");              
-//         for(int j=a;j>i;j--){    
-//             printf("* ");       
-//         }                         
-//         printf("\n");
-//     }                  
-// }
 
-#include <stdio.h>
 
-int main() {
-    int n;
-    printf("odd no. ");
-    scanf("%d",&n);
-    int k=0;
-    for(int i=1;i<=n;++i){
-        if(i<=n/2+1) ++k;
-        else --k;
-    
-        for(int j=1;j<=n;++j){
-            if(j>=n/2+k+1 || j<=n/2-k+1) printf("  ");
-            else printf("* ");
-        }
-        printf("\n");
-    }
-    return 0;
-}
 
-// #include <stdio.h>
 
-// int main()
-// {
-//     int i,j,k,n;
-//     scanf("%d",&n);
-//     for(i=1;i<=n;i++)
-//     {
-//         for( k=n;k>i;k--) printf("  ");
-        
-//         for( j=1;j<=i;j++) printf("%d ",j);
 
-//         for(j=i-1;j>0;j--) printf("%d ",j);
 
-//         printf("\n");
-//     }
-//       return 0;
-// }
+
+
+
+
+
+
+
 
 // #include<stdio.h>
 // int main ()
