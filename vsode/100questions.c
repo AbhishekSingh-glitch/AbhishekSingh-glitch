@@ -126,9 +126,7 @@ int main()
 // 10 C Program to print ODD numbers from 1 to 10
 {
     int a;
-    /*printf("Enter a no.");
-    scanf("%d",&a);
-    while(a==0)*/
+    // while(a==0)
     while(a<=10){
     if(a%2!=0)
     printf("d\t",a);
