@@ -1,7 +1,6 @@
-// * * * *            //done
-// * * * *
-// * * * *
-// * * * *
+//Square
+// * *
+// * *
 
 // #include<stdio.h>
 // int main(){
@@ -14,11 +13,9 @@
 //     }
 // }
 
-// 1 1 1 1            //done
-// 2 2 2 2 
-// 3 3 3 3  
-// 4 4 4 4
 
+// 1 1          
+// 2 2 
 // #include<stdio.h>
 // int main(){
 //     printf("Enter length to sqaure to print ");
@@ -30,41 +27,150 @@
 //     }
 // }
 
-//  1 2 3 4        //done
-//  1 2 3 
+
+// * * * *
+// *     *               //done
+// *     *
+// * * * *
+
+// #include <stdio.h>
+// int main() {
+//   int a;
+//   scanf("%d", &a);
+//   for (int i = 1; i <= a; i++) {
+//     for (int j = 1; j <= a; j++)
+//       if (i == 1|| i == a || j ==1 || j == a)
+//         printf("* ");
+//         else printf("  ");
+//     printf("\n");
+//   }
+// }
+
+
+
+
+
+
+
+
+
+
+// * * * 
+//  * * * 
+//   * * *
+// #include<stdio.h>
+
+// int main (){
+//     int a=5;                       
+//     for(int i=0;i<a;i++){
+//         for(int j=0;j<=i;j++)  
+//         printf(" ");            
+//         for(int j=0;j<a;j++){     
+//             printf("* ");     
+//         }                       
+//         printf("\n");
+//     }
+// }
+//                
+// *
+// * *
+// * * *  
+// #include<stdio.h>
+// int main (){
+//     int a=5;                      
+//     for(int i=0;i<a;i++){         
+//         for(int j=0;j<=i;j++){    
+//             printf("* ");         
+//         }                         
+//         printf("\n");
+//     }
+// }
+
+
+//  1            //done
 //  1 2 
-//  1
+//  1 2 3 
+//  1 2 3 4
 
 // #include<stdio.h>
 // int main(){
 //     printf("Enter length to print ");
 //     int a; scanf("%d",&a);
 //     for(int i=1;i<=a;i++){
-//         for(int j=1;j<=a;j++)
-//         if(i+j<=a+1)
+//         for(int j=1;j<=i;j++)
 //         printf("%d ",j);
 //         printf("\n");
 //     }
 // }
 
-//    OR
+// 1 
+// 2 3 
+// 4 5 6 
+// 7 8 9 10 
+// 11 12 13 14 15 
+
+// #include<stdio.h>
+// int main(){
+//     int a=5,b=1;    
+//     for(int i=0;i<a;i++){   
+//         for(int j=0;j<=i;j++)
+//             printf("%d ",b++); 
+//         printf("\n");
+//     }
+// }
+
+// 1 
+// 2 2 
+// 3 3 3 
+// 4 4 4 4 
+// 5 5 5 5 5
+// #include<stdio.h>
+// int main(){
+//     int a=5,b=1;    
+//     for(int i=1;i<=a;i++){   
+//         for(int j=0;j<i;j++)
+//             printf("%d ",i); 
+//         printf("\n");
+//     }
+// }
+
+// A             //done
+// AB
+// ABC
+// ABCD
 
 // #include<stdio.h>
 // int main(){
 //     printf("Enter length to print ");
 //     int a; scanf("%d",&a);
-//     for(int i=1;i<=a;i++){
-//         for(int j=1;j<=a-i+1;j++)
-//         printf("%d ",j);
+//     for(int i=65;i<=64+a;i++){
+//         for(char j='A';j<=i;j++)
+//         printf("%c",j);
 //         printf("\n");
 //     }
 // }
 
+// 1                    //done
+// 2 1
+// 3 2 1
+// 4 3 2 1
 
-//  A             //done
+// #include <stdio.h>
+// int main()
+// {
+//     int i,j,n;
+//     scanf("%d",&n);
+//     for(i=1;i<=n;i++)
+//     {
+//         for(j=i;j>0;j--) printf("%d ",j);
+//         printf("\n");
+//     }
+//     return 0;
+// }
+
+//  A             
 //  A B 
 //  A B C 
-//  A B C D
 
 // #include<stdio.h>
 // int main(){
@@ -91,7 +197,7 @@
 // }
 
 
-//  1             //done
+//  1         
 //  A B 
 //  1 2 3 
 //  A B C D 
@@ -129,6 +235,86 @@
 //         printf("\n");
 //     }
 // }
+
+//          *
+//        * *
+//      * * *
+// #include<stdio.h>
+// int main (){
+//     int a=5;                       
+//     for(int i=0;i<a;i++){
+//         for(int j=a;j>i;j--)      
+//         printf("  ");             
+//         for(int j=0;j<=i;j++){    
+//             printf("* ");         
+//         }                         
+//         printf("\n");
+//     }
+// }
+
+//  * * * 
+//  * * 
+//  * 
+// #include<stdio.h>
+// int main (){
+//     int a=5;                       
+//     for(int i=0;i<a;i++){          
+//           for(int j=a;j>i;j--){    
+//             printf("* ");          
+//         }                          
+//         printf("\n");
+//     }
+
+
+//  1 2 3 
+//  1 2 
+//  1
+
+// #include<stdio.h>
+// int main(){
+//     printf("Enter length to print ");
+//     int a; scanf("%d",&a);
+//     for(int i=1;i<=a;i++){
+//         for(int j=1;j<=a;j++)
+//         if(i+j<=a+1)
+//         printf("%d ",j);
+//         printf("\n");
+//     }
+// }
+
+//    OR
+
+// #include<stdio.h>
+// int main(){
+//     printf("Enter length to print ");
+//     int a; scanf("%d",&a);
+//     for(int i=1;i<=a;i++){
+//         for(int j=1;j<=a-i+1;j++)
+//         printf("%d ",j);
+//         printf("\n");
+//     }
+// }
+
+//      * * *
+//        * *
+//          *
+// #include<stdio.h>
+
+// int main (){
+//     int a=5;                       
+//     for(int i=0;i<a;i++){
+//         for(int j=0;j<i;j++)     
+//         printf("  ");             
+//         for(int j=a;j>i;j--){     
+//             printf("* ");         
+//         }                         
+//         printf("\n");
+//     }
+// }
+
+
+
+
 
 // *               //done
 // * * 
@@ -173,73 +359,24 @@
 //     } 
 // }
 
-// * * * *
-// *     *               //done
-// *     *
-// * * * *
 
-// #include <stdio.h>
-// int main() {
-//   int a;
-//   scanf("%d", &a);
-//   for (int i = 1; i <= a; i++) {
-//     for (int j = 1; j <= a; j++)
-//       if (i == 1|| i == a || j ==1 || j == a)
-//         printf("* ");
-//         else printf("  ");
-//     printf("\n");
-//   }
-// }
 
-//  1            //done
-//  1 2 
-//  1 2 3 
-//  1 2 3 4
-
+//      * 
+//     * * 
+//    * * * 
+//   * * * * 
+//  * * * * *
 // #include<stdio.h>
-// int main(){
-//     printf("Enter length to print ");
-//     int a; scanf("%d",&a);
-//     for(int i=1;i<=a;i++){
-//         for(int j=1;j<=i;j++)
-//         printf("%d ",j);
+// int main (){
+//     int a=5;                       
+//     for(int i=0;i<a;i++){
+//         for(int j=a;j>i;j--)      
+//         printf(" ");              
+//         for(int j=0;j<=i;j++){    
+//             printf("* ");         
+//         }                         
 //         printf("\n");
 //     }
-// }
-
-
-// A             //done
-// AB
-// ABC
-// ABCD
-
-// #include<stdio.h>
-// int main(){
-//     printf("Enter length to print ");
-//     int a; scanf("%d",&a);
-//     for(int i=65;i<=64+a;i++){
-//         for(char j='A';j<=i;j++)
-//         printf("%c",j);
-//         printf("\n");
-//     }
-// }
-
-// 1                    //done
-// 2 1
-// 3 2 1
-// 4 3 2 1
-
-// #include <stdio.h>
-// int main()
-// {
-//     int i,j,n;
-//     scanf("%d",&n);
-//     for(i=1;i<=n;i++)
-//     {
-//         for(j=i;j>0;j--) printf("%d ",j);
-//         printf("\n");
-//     }
-//     return 0;
 // }
 
 // Write a C program to print the following Pattern.
@@ -274,6 +411,26 @@
 //         for(int j=a-1;j>i;j--)  printf(" ");
 //         for(int j=1;j<=i+i+1;j++)  printf("%d",j);
 //         printf("\n");} 
+// }
+
+//         1 
+//       1 2 1 
+//     1 2 3 2 1 
+//   1 2 3 4 3 2 1 
+// 1 2 3 4 5 4 3 2 1 
+// #include <stdio.h>
+
+// int main()
+// {
+//     int i,j,k,n;
+//     scanf("%d",&n);
+//     for(i=1;i<=n;i++){
+//         for( k=n;k>i;k--) printf("  ");
+//         for( j=1;j<=i;j++) printf("%d ",j);
+//         for(j=i-1;j>0;j--) printf("%d ",j);
+//         printf("\n");
+//     }
+//     return 0;
 // }
 
 // Write a C program to print the following Pattern.
@@ -393,7 +550,24 @@
 //     return 0;
 // }
 
-// Write a C program to print the following Pattern.
+//  * * * * *
+//   * * * * 
+//    * * * 
+//     * * 
+//      * 
+// #include<stdio.h>
+// int main (){
+//     int a=5;                       
+//     for(int i=0;i<a;i++){
+//         for(int j=0;j<i;j++)      
+//         printf(" ");              
+//         for(int j=a;j>i;j--){     
+//             printf("* ");         
+//         }                         
+//         printf("\n");
+//     }
+// }
+
 // *     *
 //  *   *
 //   * *                          //done
@@ -447,7 +621,6 @@
 //     return 0;
 // }
 
-// Write a C program to print the following Pattern.
 // ABCDEFG
 // ABC EFG
 // AB   FG
@@ -504,7 +677,62 @@
 //     return 0;
 // }
 
-// Write a C program to print the following Pattern.
+//     *     
+//   * * *   
+// * * * * * 
+//   * * *   
+//     *  
+// #include <stdio.h>
+
+// int main() {
+//     int n;
+//     printf("odd no. ");
+//     scanf("%d",&n);
+//     int k=0;
+//     for(int i=1;i<=n;++i){
+//         if(i<=n/2+1) ++k;
+//         else --k;
+    
+//         for(int j=1;j<=n;++j){
+//             if(j>=n/2+k+1 || j<=n/2-k+1) printf("  ");
+//             else printf("* ");
+//         }
+//         printf("\n");
+//     }
+//     return 0;
+// }
+
+//      * 
+//     * *
+//    * * *
+//   * * * *
+//  * * * * *
+//   * * * *
+//    * * *
+//     * *
+//      *
+// #include<stdio.h>
+
+// int main (){
+//     int a=4; 
+//       for(int i=0;i<=a;i++){
+//         for(int j=a;j>i;j--)    
+//         printf(" ");              
+//         for(int j=0;j<=i;j++){    
+//             printf("* ");       
+//         }                         
+//         printf("\n");          
+//     }                           
+//     for(int i=0;i<a;i++){         
+//         for(int j=0;j<=i;j++)    
+//         printf(" ");              
+//         for(int j=a;j>i;j--){    
+//             printf("* ");       
+//         }                         
+//         printf("\n");
+//     }                  
+// }
+
 //    *
 //   * *
 //  *   *
@@ -793,4 +1021,71 @@
 //   for (int i=1;i<n;i++) pi(i,n);
 //   for (int i=n;i>0;i--) pi(i,n);
 //   return 0;
+// }
+
+
+//  * * * * *
+//   * * * * 
+//    * * * 
+//     * * 
+//      * 
+//     * *
+//    * * *  
+//   * * * *
+//  * * * * *
+// #include<stdio.h>
+
+// int main (){
+//     int a=4;                
+//     for(int i=0;i<a;i++){
+//         for(int j=0;j<i;j++)      
+//         printf(" ");              
+//         for(int j=a;j>=i;j--){    
+//             printf("* ");         
+//         }                         
+//         printf("\n");             
+//     }                             
+//     for(int i=0;i<=a;i++){        
+//         for(int j=a;j>i;j--)      
+//         printf(" ");              
+//         for(int j=0;j<=i;j++){    
+//             printf("* ");         
+//         }                         
+//         printf("\n");
+//     }
+// }
+
+// *     *
+//  *   * 
+//   * *  
+//    *   
+//   * *  
+//  *   * 
+// *     *
+// #include <stdio.h>
+// int main() {
+//   int a;
+//   scanf("%d", &a);
+
+//   for (int i = 1; i <= a; i++) {
+
+//     for (int j = 1; j <= a * 2-1; j++) {
+//      if (i==j||i + j == a * 2)
+//         printf("*");
+//     else
+//         printf(" ");
+//      }
+//     printf("\n");
+//   }
+  
+//   for (int i = a-1; i >0; i--) {
+
+//     for (int j = 1; j <= a * 2-1; j++) {
+//      if (i==j||i + j == a * 2)
+//         printf("*");
+//     else
+//         printf(" ");
+//      }
+//     printf("\n");
+//   }
 // }
