@@ -47,14 +47,6 @@
 // }
 
 
-
-
-
-
-
-
-
-
 // * * * 
 //  * * * 
 //   * * *
@@ -313,9 +305,6 @@
 // }
 
 
-
-
-
 // *               //done
 // * * 
 // * * * 
@@ -358,7 +347,6 @@
 //         printf("\n");
 //     } 
 // }
-
 
 
 //      * 
@@ -838,7 +826,7 @@
 // fu(i,a);
 // }
 
-// Write a C program to print the following Pattern.
+
 // *******
 // *** ***
 // **   **
@@ -936,7 +924,6 @@
 // }
 
 
-// Write a C program to print the following Pattern.
 //      *
 //     ***
 //    * * *
