@@ -179,22 +179,29 @@
 //WAP to find the smallest missing positive element in the sorted Array. (Take array as user input)
 //(Example: //input-> 1, 2, 3, 5, 6, 7
 //output-> 4
-//input-> -5,-1,1, 2, 3, 4, 6
+//input-> -5,-1,1, 2, 3, 4, 6  
 //output-> 5
-// 1,2,3,4,5,8 = 6
+// 1 2 3 4 5 8 = 6
 #include<stdio.h>
 int main(){
-    int a[]= {1, 2, 3, 5, 6, 7};
+    int a[]= {-5,-1,1, 2, 3, 4, 6};
     int n=sizeof(a)/sizeof(int);
-    int s=0,k;
-    for(int i=0;i<n;i++) scanf("%d",&a[i]);
-    for(k=a[0];k<a[n-1];k++){
-        if(k>0)
-        if(a[s]!=k) break;
-        s++;
+    int s=a[0],k;
+    // for(int i=0;i<n;i++) scanf("%d",&a[i]);
+
+    for(k=a[0];k<a[n-1];k++,s++){
+    //    printf("1 %d %d %d %d\n",k,s,a[s],a[k]);
+
+        if(k>0&&s>0){
+            printf("2 %d %d %d %d\n",k,s,a[s],a[k]);
+            if(a[s]!=a[k]) break;
+        }
+        // s++;
+        // printf("3 %d %d\n",k,s);
+        
     }
 
- printf("%d ",k);
+ printf("%d %d",k,s);
 }
 
 
