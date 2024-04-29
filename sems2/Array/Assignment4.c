@@ -15,7 +15,21 @@
 // }
 
 //WAP to find the second largest element in the given Array in one pass. (one pass means using only 1 loop)
+// #include<stdio.h>
+// #include <limits.h>
+// int main(){
+//     int a[]={1,9,5,2,7,8},m,n=sizeof(a)/sizeof(int),l=INT_MIN,l2=INT_MIN;
 
+//     for(int i=0;i<n;i++)
+//     if(l<a[i]) l=a[i];
+    
+
+//     for(int i=0;i<n;i++)
+//     if(l2<a[i]&&a[i]!=l)  l2=a[i];
+    
+    
+//     printf("%d %d",l,l2);
+// }
 
 
 //WAP to find the minimum value out of all elements in the array.
@@ -168,15 +182,20 @@
 //input-> -5,-1,1, 2, 3, 4, 6
 //output-> 5
 // 1,2,3,4,5,8 = 6
-// #include<stdio.h>
-// int main(){
-//     int a[]= {1, 2, 3, 5, 6, 7};
-//     int n=sizeof(a)/sizeof(int),d=0;
+#include<stdio.h>
+int main(){
+    int a[]= {1, 2, 3, 5, 6, 7};
+    int n=sizeof(a)/sizeof(int);
+    int s=0,k;
+    for(int i=0;i<n;i++) scanf("%d",&a[i]);
+    for(k=a[0];k<a[n-1];k++){
+        if(k>0)
+        if(a[s]!=k) break;
+        s++;
+    }
 
-//     for(int i=0;i<n-1;i++)    {
-//         if(a[i]!=)
-//     }
-// }
+ printf("%d ",k);
+}
 
 
 //WAP to find the first non-repeating element in the array.
