@@ -18,17 +18,29 @@
 // #include<stdio.h>
 // #include <limits.h>
 // int main(){
-//     int a[]={1,9,5,2,7,8},m,n=sizeof(a)/sizeof(int),l=INT_MIN,l2=INT_MIN;
+//     int a[]={1,9,5,2,7,8},n=sizeof(a)/sizeof(int),l=INT_MIN,l2=INT_MIN,;
 
 //     for(int i=0;i<n;i++)
 //     if(l<a[i]) l=a[i];
+//     else if(l2<a[i]&&a[i]<l)  l2=a[i];
     
+//     printf("%d ",l2);
+// }
 
-//     for(int i=0;i<n;i++)
-//     if(l2<a[i]&&a[i]!=l)  l2=a[i];
-    
-    
-//     printf("%d %d",l,l2);
+//or 
+// #include<stdio.h>     // why this is wrong
+// #include <limits.h>
+// int main(){
+// int a[]={1,9,5,2,7,8},n=sizeof(a)/sizeof(int),l=INT_MIN,l2=INT_MIN;
+
+//     for(int i=0;i<2*n;i++)
+//         if(i<n)
+//             if(l<a[i]) l=a[i];
+
+//         else if(i>=n)
+//             if(l2<a[i-n]&&a[i-n]<l) l2=a[i-n];
+
+//     printf("%d",l2);
 // }
 
 
