@@ -179,30 +179,26 @@
 //WAP to find the smallest missing positive element in the sorted Array. (Take array as user input)
 //(Example: //input-> 1, 2, 3, 5, 6, 7
 //output-> 4
-//input-> -5,-1,1, 2, 3, 4, 6  
-//output-> 5
+//input-> -5,-1,, 2, 3, 4, 6  
+//output-> 1
 // 1 2 3 4 5 8 = 6
-#include<stdio.h>
-int main(){
-    int a[]= {-5,-1,1, 2, 3, 4, 6};
-    int n=sizeof(a)/sizeof(int);
-    int s=a[0],k;
-    // for(int i=0;i<n;i++) scanf("%d",&a[i]);
 
-    for(k=a[0];k<a[n-1];k++,s++){
-    //    printf("1 %d %d %d %d\n",k,s,a[s],a[k]);
+// #include<stdio.h>
+// int main(){
+//     int a[]= {1,2,3,4,5};
+//     int n=sizeof(a)/sizeof(int);
+//     int i=a[0],s=0,f=0;
 
-        if(k>0&&s>0){
-            printf("2 %d %d %d %d\n",k,s,a[s],a[k]);
-            if(a[s]!=a[k]) break;
-        }
-        // s++;
-        // printf("3 %d %d\n",k,s);
-        
-    }
-
- printf("%d %d",k,s);
-}
+//     for(i=a[0],s=0;i<a[n-1];i++,s++)
+//         if(a[s]>0){
+//             if(a[s]==1&&f==0) f=1;
+//             else if(f==0) break;
+//         if(a[s]<=a[s+1]&&a[s+1]!=a[s]+1) break;
+//         }
+//     if(a[s]>0&&f==1)
+//         printf("%d",a[s]+1);
+//     else printf("1");
+// }
 
 
 //WAP to find the first non-repeating element in the array.
@@ -239,3 +235,5 @@ int main(){
                 
 //     if(f==-1) printf("%d",f);
 // }
+
+
