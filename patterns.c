@@ -28,10 +28,9 @@
 // }
 
 
-// * * * *
-// *     *               //done
-// *     *
-// * * * *
+// * * *
+// *   *               //done 
+// * * * 
 
 // #include <stdio.h>
 // int main() {
@@ -82,7 +81,6 @@
 //  1            //done
 //  1 2 
 //  1 2 3 
-//  1 2 3 4
 
 // #include<stdio.h>
 // int main(){
@@ -98,8 +96,6 @@
 // 1 
 // 2 3 
 // 4 5 6 
-// 7 8 9 10 
-// 11 12 13 14 15 
 
 // #include<stdio.h>
 // int main(){
@@ -114,8 +110,7 @@
 // 1 
 // 2 2 
 // 3 3 3 
-// 4 4 4 4 
-// 5 5 5 5 5
+
 // #include<stdio.h>
 // int main(){
 //     int a=5,b=1;    
@@ -128,8 +123,6 @@
 
 // A             //done
 // AB
-// ABC
-// ABCD
 
 // #include<stdio.h>
 // int main(){
@@ -145,7 +138,6 @@
 // 1                    //done
 // 2 1
 // 3 2 1
-// 4 3 2 1
 
 // #include <stdio.h>
 // int main()
@@ -193,7 +185,6 @@
 //  A B 
 //  1 2 3 
 //  A B C D 
-//  1 2 3 4 5
 
 // #include<stdio.h>
 // int main(){
@@ -228,9 +219,9 @@
 //     }
 // }
 
-//          *
-//        * *
-//      * * *
+//      *
+//    * *
+//  * * *
 // #include<stdio.h>
 // int main (){
 //     int a=5;                       
@@ -287,9 +278,9 @@
 //     }
 // }
 
-//      * * *
-//        * *
-//          *
+// * * *
+//   * *
+//     *
 // #include<stdio.h>
 
 // int main (){
@@ -308,10 +299,8 @@
 // *               //done
 // * * 
 // * * * 
-// * * * * 
-// * * * 
-// * *  
-// * 
+// * * 
+// *  
 
 // #include<stdio.h>
 // int main (){
@@ -352,8 +341,6 @@
 //      * 
 //     * * 
 //    * * * 
-//   * * * * 
-//  * * * * *
 // #include<stdio.h>
 // int main (){
 //     int a=5;                       
@@ -371,7 +358,6 @@
 //    1
 //   123                 //done
 //  12345
-// 1234567
 
 // #include<stdio.h>
 // int main(){
@@ -403,9 +389,8 @@
 
 //         1 
 //       1 2 1 
-//     1 2 3 2 1 
-//   1 2 3 4 3 2 1 
-// 1 2 3 4 5 4 3 2 1 
+//     1 2 3 2 1
+
 // #include <stdio.h>
 
 // int main()
@@ -425,8 +410,6 @@
 //    A 
 //   ABC         //done
 //  ABCDE
-// ABCDEFG
-
 // #include<stdio.h>
 // int main(){
 //     printf("Enter a no.");
@@ -453,11 +436,10 @@
       
 //         for(int j=b;j>i;j--)
 //         printf(" ");
-        
-//         for(int j=1;j<i+i;j++){
+
+//         for(int j=1;j<i+i;j++)
 //         printf("%c",j+64);
-        
-//         }
+
 //         printf("\n");
 //     }
 // }
@@ -466,8 +448,7 @@
 // Write a C program to print the following Pattern.
 //    A 
 //   BAB         
-//  CBABC
-// DCBABCD                    // done
+//  CBABC               // done
 
 // #include<stdio.h>
 // int main(){
@@ -486,8 +467,7 @@
 // Write a C program to print the following Pattern.
 //    1
 //   2 2               
-//  3   3
-// 4     4                      //done
+//  3   3                     //done
 
 // #include<stdio.h>
 // int main(){
@@ -538,8 +518,6 @@
 //     return 0;
 // }
 
-//  * * * * *
-//   * * * * 
 //    * * * 
 //     * * 
 //      * 
@@ -556,7 +534,6 @@
 //     }
 // }
 
-// *     *
 //  *   *
 //   * *                          //done
 //    *
@@ -580,10 +557,9 @@
 
 
 
-// 1234321              //done
-// 123 321
-// 12   21
-// 1     1
+// 12321              //done
+// 12 21
+// 1   1
 
 // #include<stdio.h>
 // int main(){
@@ -609,10 +585,9 @@
 //     return 0;
 // }
 
-// ABCDEFG
-// ABC EFG
-// AB   FG
-// A     G               // done
+// ABCDE
+// AB DE
+// A   E              // done
 
 // #include<stdio.h>
 // int main(){
@@ -1011,15 +986,12 @@
 // }
 
 
-//  * * * * *
-//   * * * * 
 //    * * * 
 //     * * 
 //      * 
 //     * *
 //    * * *  
-//   * * * *
-//  * * * * *
+
 // #include<stdio.h>
 
 // int main (){
@@ -1042,13 +1014,13 @@
 //     }
 // }
 
-// *     *
+
 //  *   * 
 //   * *  
 //    *   
 //   * *  
 //  *   * 
-// *     *
+
 // #include <stdio.h>
 // int main() {
 //   int a;
