@@ -215,33 +215,21 @@
 
 //WAP to find the first non-repeating element in the array.
 //(Example: int arr[n] = {1, 1, 2, 56, 89, 56, 2, 31, 2, 89, 45, 34};
-//output-> 31
-// #include<stdio.h>
-// int main(){
-//     int a[]= {1, 1, 2, 56, 89, 56, 2, 31, 2, 89, 45, 34};
-//     int n=sizeof(a)/sizeof(int),d=0;
-//     int j;
-//     for(int i=0;i<n;i++){
-//         for(j=n-1;j>=0;j--)
-//             if(a[i]==a[j]) {d=0; break;}
-//             else if(j==0){d=a[i]; }
-//         if(d>0&& j==0) break;}
-//     if(d>0) printf("%d ",d);
-// }
+//output-> 3
 
-// OR
-// #include<stdio.h>
-// int main(){
-//     int a[]= {1, 1, 2, 56, 89, 56, 2, 31, 2, 89, 45, 34};
-//     int n=sizeof(a)/sizeof(int),i=0,d=0, j;
-//     for( i=0;i<n;i++){
-//         d=0;
-//         for(j=0;j<n;j++)
-//             if(a[i]==a[j])  ++d;
-            
-//         if(d==0){ printf("%d ",a[i]); break;} 
+// #include <stdio.h>
+// int main() {
+//     int a[] = {1, 1, 2, 56, 89, 56, 2, 31, 2, 89, 45, 34},
+//     i,j,n=sizeof(a)/sizeof(int),c=0;
+    
+//     for(i=0;i<n;i++){
+//         c=0;
+//         for( j=0;j<n;j++)
+//         if(a[i]==a[j]&&i!=j) c++;
+//         if(c==0) break;
 //     }
-//     // if(d==0) printf("%d ",a[i]);
+//     printf("%d",a[i]);
+//     return 0;
 // }
 
 //WAP to find and display all the common elements of two arrays 'nums1' and 'nums2'. Print -1 if there are no common elements.
