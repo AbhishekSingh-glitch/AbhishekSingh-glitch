@@ -2,16 +2,16 @@
 
 // #include<stdio.h>
 // int main(){
-//     int a[5];
+//     int a[5],m=1;
 //     int n=sizeof(a)/sizeof(int);
 
 //     for(int i=0;i<n;i++)
 //         scanf("%d",&a[i]);
     
 //     for(int i=1;i<n;i++)
-//         a[0]*=a[i];
+//         m*=a[i];
 
-//     printf("product of all the elements %d",a[0]);
+//     printf("product of all the elements %d",m);
 // }
 
 //WAP to find the second largest element in the given Array in one pass. (one pass means using only 1 loop)
