@@ -1,32 +1,32 @@
-#include<stdio.h>
+// #include<stdio.h>
 
-int main (){
-  int a; scanf("%d",&a);
-  for(int i=0;i<a;i++){
-    for(int j=a;j>i+1;j--)           
-      printf("*");         
+// int main (){
+//   int a; scanf("%d",&a);
+//   for(int i=0;i<a;i++){
+//     for(int j=a;j>i+1;j--)           
+//       printf("*");         
 
-    for(int j=1;j<i+i;j++)       
-      printf(".");  
+//     for(int j=1;j<i+i;j++)       
+//       printf(".");  
 
-    for(int j=a;j>i+1;j--)
-      printf("*"); 
+//     for(int j=a;j>i+1;j--)
+//       printf("*"); 
                     
-      printf("\n");             
-  }            
-  for(int i=0;i<=a;i++){       
-    for(int j=0;j<i+1;j++)           
-      printf("^");           
+//       printf("\n");             
+//   }            
+//   for(int i=0;i<=a;i++){       
+//     for(int j=0;j<i+1;j++)           
+//       printf("^");           
         
-    for(int j=a+i;j>=i;j--) 
-      printf("-");
+//     for(int j=a+i;j>=i;j--) 
+//       printf("-");
 
-    for(int j=0;j<i;j++)
-      printf("*");
+//     for(int j=0;j<i;j++)
+//       printf("*");
 
-    printf("\n");
-  }                  
-}
+//     printf("\n");
+//   }                  
+// }
 
 
 
@@ -79,4 +79,15 @@ int main (){
 //   return 0;
 // }
 
+#include<stdio.h>
+#include<stdlib.h>
+int main(){
+  char *sen= "hello world";
 
+  while(1){
+    printf("%s\n",sen);
+    system("sleep 1");
+    system("clear");
+    }
+  
+}
