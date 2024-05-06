@@ -114,7 +114,7 @@ int main() {
             scanf(" %c",&a[i][j]);  
     
     //printing
-  while(o<5){  
+  while(o<q/2){  
     
       if(o==1) { i++,j++;}
       //1st row
@@ -141,11 +141,11 @@ int main() {
         for(int k=0;k<q-2-o-o;k++,i--)
             printf("%c ",a[i][j]);
         }
-    if(o==3){
-    i++;j++;
-    if(i==j)
-        printf("%c ",a[i][j]);
-    break;}
+    // if(o==3){
+    // i++;j++;
+    // if(i==j)
+    //     printf("%c ",a[i][j]);
+    // break;}
         
         o++;
         printf("\n");
@@ -153,7 +153,51 @@ int main() {
 
     return 0;
 }
-// 3
+
+// right for square
+#include <stdio.h>
+int main() {
+    // input 
+    int q,w;
+    printf("enter q ,w\n");
+    scanf("%d%d",&q,&w);
+    char a[q][w],i=0,j=0,o=0;
+    printf("Enter elements of matrix\n");
+    for (int i = 0; i < q; i++) 
+        for (int j = 0; j < w; j++)
+            scanf(" %c",&a[i][j]);  
+    printf("\n");
+
+    //printing
+  while(o<5){  
+     
+      //1st row
+    if(i==o && j==o)
+        for(int k=0;k<w-o-o;k++,j++)
+            printf("%c ",a[i][j]);
+
+           // last col
+    if(i==o && j==w-o){
+        i++;
+        for(int k=0;k<q-1-o-o;k++, i++)
+           printf("%c ",a[i][q-1-o]);
+    }
+      // last row
+    if(i==q-o &&j==w-o){
+        j-=2; i--;
+        for(int k=0;k<w-1-o-o;k++,--j)
+            printf("%c ",a[i][j]);
+    }
+    ///1st col
+        j++; i--;
+        for(int k=0;k<q-2-o-o;k++,i--)
+            printf("%c ",a[i][j]);
+    i++;j++;
+        o++;
+        }
+    return 0;
+}
+// 3  
 // 1 2 3
 // 4 5 6
 // 7 8 9
