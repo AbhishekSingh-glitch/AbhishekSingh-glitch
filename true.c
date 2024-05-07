@@ -132,7 +132,6 @@ int main() {
 char a[]="Selecting colors not simply for play, but to infuse the world with their presence, speaks to a profound understanding of the human psyche and the intricate interplay between perception and emotion. It signifies a conscious endeavor to enrich our environments with the nuanced tapestry of feelings and associations that colors evoke, transcending mere aesthetics to touch upon the very essence of our shared human experience. It is an expression of the universal longing to imbue our surroundings with depth, meaning, and soulful resonance, inviting contemplation, connection, and transformation in the vibrant hues that adorn our lives.";
   int n=sizeof(a)-1;
   for(int i=0;i<n;i++) {
-
     customSleep(80);
     printf("%c",a[i]);
   }
