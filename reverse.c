@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main ()
 {
-    int a,n, r;
+    int a,n=0, r;
     scanf("%d", &a);
     while (a != 0) {
         r = a % 10;
