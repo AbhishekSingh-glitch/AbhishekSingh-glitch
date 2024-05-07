@@ -23,7 +23,7 @@ int main(){
         b++;
         
     }
-        printf("avg %.2f\n",res/b);
-        printf("%f",res);
-        return 0;
+    printf("%.3f\n",res);
+    printf("avg %.2f",res/b);
+    return 0;
 }
