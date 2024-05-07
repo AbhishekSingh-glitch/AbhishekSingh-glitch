@@ -1,5 +1,5 @@
-#include<stdio.h>
-int main()
+// #include<stdio.h>
+// int main()
 
 //Input and Output: Write a C program to take two integers as input and display their sum.
 /*{
@@ -31,12 +31,39 @@ int main()
     printf("right input");
 }*/
 
+// OR
+// #include <stdio.h>
+// int main(){
+//     int a;
+//     while(1){
+//         printf("enter a +ve no.\n");
+//         scanf("%d",&a);
+//         if(a<0) printf("wrong input\n");
+//         else {  printf("right input\n"); break;  }
+//     }
+// }
+// OR
+// #include <stdio.h>
+// #include<unistd.h>
+// #include<stdlib.h>
+
+// int main(){
+//     int a;
+//     while('x'){
+//         printf("enter a +ve no.\n");
+//         scanf("%d",&a);
+//         if(a<0) {printf("wrong input\n"); 
+//         sleep(1);
+//         system("cls");}
+//         else if(a>=0){  printf("right input\n"); break;  }
+//     }
+// }
+
 //Simple Arithmetic: Write a program that takes two integers as input, multiplies them, and displays the result.
 /*{
     int a,b,c;
     scanf("%d%d",&a,&b);
-    c=a*b;
-    printf("%d",c);
+    printf("%d",c=a*b);
     return 0;
 }*/
 
