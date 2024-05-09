@@ -101,102 +101,102 @@
 
 
 
-#include <stdio.h>
-int main() {
-    // input 
-    int q,w;
-    printf("enter q ,w\n");
-    scanf("%d%d",&q,&w);
-    char a[q][w],i=0,j=0,o=0;
-    printf("Enter elements of matrix\n");
-    for (int i = 0; i < q; i++) 
-        for (int j = 0; j < w; j++)
-            scanf(" %c",&a[i][j]);  
+// #include <stdio.h>
+// int main() {
+//     // input 
+//     int q,w;
+//     printf("enter q ,w\n");
+//     scanf("%d%d",&q,&w);
+//     char a[q][w],i=0,j=0,o=0;
+//     printf("Enter elements of matrix\n");
+//     for (int i = 0; i < q; i++) 
+//         for (int j = 0; j < w; j++)
+//             scanf(" %c",&a[i][j]);  
     
-    //printing
-  while(o<q/2){  
+//     //printing
+//   while(o<q/2){  
     
-      if(o==1) { i++,j++;}
-      //1st row
-    if(i==o && j==o)
-        for(int k=0;k<w-o-o;k++,j++)
-            printf("%c ",a[i][j]);
+//       if(o==1) { i++,j++;}
+//       //1st row
+//     if(i==o && j==o)
+//         for(int k=0;k<w-o-o;k++,j++)
+//             printf("%c ",a[i][j]);
             
-           // last col
-    if(i==o && j==w-o){
-        i++;
-        for(int k=0;k<q-1-o-o;k++, i++)
-            printf("%c ",a[i][w-1-o]);
-    }
-      // last row
-    if(i==q-o &&j==w-o){
-        j-=2; i--;
-        for(int k=0;k<(w-1)-o-o;k++,--j)
-            printf("%c ",a[i][j]);
+//            // last col
+//     if(i==o && j==w-o){
+//         i++;
+//         for(int k=0;k<q-1-o-o;k++, i++)
+//             printf("%c ",a[i][w-1-o]);
+//     }
+//       // last row
+//     if(i==q-o &&j==w-o){
+//         j-=2; i--;
+//         for(int k=0;k<(w-1)-o-o;k++,--j)
+//             printf("%c ",a[i][j]);
         
-    }
-    ///1st col
-    if(i==q-1-o && j==-1+o){
-        j++; i--;
-        for(int k=0;k<q-2-o-o;k++,i--)
-            printf("%c ",a[i][j]);
-        }
-    // if(o==3){
-    // i++;j++;
-    // if(i==j)
-    //     printf("%c ",a[i][j]);
-    // break;}
+//     }
+//     ///1st col
+//     if(i==q-1-o && j==-1+o){
+//         j++; i--;
+//         for(int k=0;k<q-2-o-o;k++,i--)
+//             printf("%c ",a[i][j]);
+//         }
+//     // if(o==3){
+//     // i++;j++;
+//     // if(i==j)
+//     //     printf("%c ",a[i][j]);
+//     // break;}
         
-        o++;
-        printf("\n");
-}
+//         o++;
+//         printf("\n");
+// }
 
-    return 0;
-}
+//     return 0;
+// }
 
 // right for square
-#include <stdio.h>
-int main() {
-    // input 
-    int q,w;
-    printf("enter q ,w\n");
-    scanf("%d%d",&q,&w);
-    char a[q][w],i=0,j=0,o=0;
-    printf("Enter elements of matrix\n");
-    for (int i = 0; i < q; i++) 
-        for (int j = 0; j < w; j++)
-            scanf(" %c",&a[i][j]);  
-    printf("\n");
+// #include <stdio.h>
+// int main() {
+//     // input 
+//     int q,w;
+//     printf("enter q ,w\n");
+//     scanf("%d%d",&q,&w);
+//     char a[q][w],i=0,j=0,o=0;
+//     printf("Enter elements of matrix\n");
+//     for (int i = 0; i < q; i++) 
+//         for (int j = 0; j < w; j++)
+//             scanf(" %c",&a[i][j]);  
+//     printf("\n");
 
-    //printing
-  while(o<5){  
+//     //printing
+//   while(o<5){  
      
-      //1st row
-    if(i==o && j==o)
-        for(int k=0;k<w-o-o;k++,j++)
-            printf("%c ",a[i][j]);
+//       //1st row
+//     if(i==o && j==o)
+//         for(int k=0;k<w-o-o;k++,j++)
+//             printf("%c ",a[i][j]);
 
-           // last col
-    if(i==o && j==w-o){
-        i++;
-        for(int k=0;k<q-1-o-o;k++, i++)
-           printf("%c ",a[i][q-1-o]);
-    }
-      // last row
-    if(i==q-o &&j==w-o){
-        j-=2; i--;
-        for(int k=0;k<w-1-o-o;k++,--j)
-            printf("%c ",a[i][j]);
-    }
-    ///1st col
-        j++; i--;
-        for(int k=0;k<q-2-o-o;k++,i--)
-            printf("%c ",a[i][j]);
-    i++;j++;
-        o++;
-        }
-    return 0;
-}
+//            // last col
+//     if(i==o && j==w-o){
+//         i++;
+//         for(int k=0;k<q-1-o-o;k++, i++)
+//            printf("%c ",a[i][q-1-o]);
+//     }
+//       // last row
+//     if(i==q-o &&j==w-o){
+//         j-=2; i--;
+//         for(int k=0;k<w-1-o-o;k++,--j)
+//             printf("%c ",a[i][j]);
+//     }
+//     ///1st col
+//         j++; i--;
+//         for(int k=0;k<q-2-o-o;k++,i--)
+//             printf("%c ",a[i][j]);
+//     i++;j++;
+//         o++;
+//         }
+//     return 0;
+// }
 // 3  
 // 1 2 3
 // 4 5 6
@@ -237,8 +237,17 @@ int main() {
 // 0 ! @ # $ % ^
 // & * ( ) - + =
 
+// 7X11  
+// 1 2 3 4 5 6 7 8 9 0 a
+// b c d e f g h i j k l
+// m n o p q r s t u v w
+// x y z A B C D E F G H
+// I J K L M N O P Q R S
+// T U V W X Y Z ! @ # $
+// + * & ( ) - \ < > { }
 
-// 8 
+
+// 8   J
 // a b c d e f g h
 // i j k l m n o p
 // q r s t u v w x
@@ -248,106 +257,168 @@ int main() {
 // W X Y Z 1 2 3 4
 // 5 6 7 8 9 0 # @
 
-#include <stdio.h>
-int main() {
-    // input 
-    int q,w;
-    printf("enter q ,w\n");
-    scanf("%d%d",&q,&w);
-    char a[q][w],i=0,j=0,o=0;
-    printf("Enter elements of matrix\n");
-    for (int i = 0; i < q; i++) 
-        for (int j = 0; j < w; j++)
-            scanf(" %c",&a[i][j]);  
-    printf("\n");
-int c=q<w?q:w;
-int t=w>q?w:q;
-    //printing
-  while(o<5){  
+// 9  E
+// 1 2 3 4 5 6 7 8 9
+// a b c d e f g h i
+// j k l m n o p q r
+// s t u v w x y z 0
+// A B C D E F G H I
+// J K L M N O P Q R 
+// S T U V W X Y Z +
+// ! @ # $ & ^ * ( )
+// < > { } [ ] - _ ?
+
+// #include <stdio.h>
+// int main() {
+//     // input 
+//     int q,w;
+//     printf("enter q ,w\n");
+//     scanf("%d%d",&q,&w);
+//     char a[q][w],i=0,j=0,o=0;
+//     printf("Enter elements of matrix\n");
+//     for (int i = 0; i < q; i++) 
+//         for (int j = 0; j < w; j++)
+//             scanf(" %c",&a[i][j]);  
+//     printf("\n");
+// int c=q<w?q:w;
+// int t=w>q?w:q;
+//     //printing
+//   while(o<5){  
      
-      //1st row
-    if(i==o && j==o)
-        for(int k=0;k<w-o-o;k++,j++)
-            printf("%c! ",a[i][j]);
+//       //1st row
+//     if(i==o && j==o)
+//         for(int k=0;k<w-o-o;k++,j++)
+//             printf("%c! ",a[i][j]);
 
-           // last col
-    if(i==o && j==w-o){
-        i++;
-         if(q>w){
-        for(int k=0;k<t-1-o-o;k++, i++)
-           printf("%c~ ",a[i][c-1-o]);}
-        else{   
-        for(int k=0;k<c-1-o-o;k++, i++)
-           printf("%c~ ",a[i][t-1-o]);
-    }}
-      // last row
-    if(i==q-o &&j==w-o){
-        j-=2; i--;
-        for(int k=0;k<w-1-o-o;k++,--j)
-            printf("%c+ ",a[i][j]);
-    }
-    ///1st col
-        j++; i--;
-        for(int k=0;k<q-2-o-o;k++,i--)
-            printf("%c* ",a[i][j]);
-    i++;j++;
-        o++;
-        }
-    return 0;
-}
+//            // last col
+//     if(i==o && j==w-o){
+//         i++;
+//          if(q>w){
+//         for(int k=0;k<t-1-o-o;k++, i++)
+//            printf("%c~ ",a[i][c-1-o]);}
+//         else{   
+//         for(int k=0;k<c-1-o-o;k++, i++)
+//            printf("%c~ ",a[i][t-1-o]);
+//     }}
+//       // last row
+//     if(i==q-o &&j==w-o){
+//         j-=2; i--;
+//         for(int k=0;k<w-1-o-o;k++,--j)
+//             printf("%c+ ",a[i][j]);
+//     }
+//     ///1st col
+//         j++; i--;
+//         for(int k=0;k<q-2-o-o;k++,i--)
+//             printf("%c* ",a[i][j]);
+//     i++;j++;
+//         o++;
+//         }
+//     return 0;
+// }
 
 
 
-#include <stdio.h>
-int main() {
-    // input 
-    int q,w;
-    printf("enter q ,w\n");
-    scanf("%d%d",&q,&w);
-    char a[q][w],i=0,j=0,o=0;
-    printf("Enter elements of matrix\n");
-    for (int i = 0; i < q; i++) 
-        for (int j = 0; j < w; j++)
-            scanf(" %c",&a[i][j]);  
-    printf("\n");
-int c=q<w?q:w;
-int t=w>q?w:q;
-    //printing
-  while(o<c){  
+// #include <stdio.h>
+// int main() {
+//     // input 
+//     int q,w;
+//     printf("enter q ,w\n");
+//     scanf("%d%d",&q,&w);
+//     char a[q][w],i=0,j=0,o=0;
+//     printf("Enter elements of matrix\n");
+//     for (int i = 0; i < q; i++) 
+//         for (int j = 0; j < w; j++)
+//             scanf(" %c",&a[i][j]);  
+//     printf("\n");
+// int c=q<w?q:w;
+// int t=w>q?w:q;
+//     //printing
+//   while(o<c){  
      
-      //1st row
-    if(i==o && j==o)
-        for(int k=0;k<w-o-o;k++,j++)
-            printf("%c! ",a[i][j]);
+//       //1st row
+//     if(i==o && j==o)
+//         for(int k=0;k<w-o-o;k++,j++)
+//             printf("%c! ",a[i][j]);
 
-           // last col
-    if(i==o && j==w-o){
-        i++;
-         if(q>w){
-        for(int k=0;k<t-1-o-o;k++, i++)
-           printf("%c~ ",a[i][c-1-o]);}
-        else{   
-        for(int k=0;k<c-1-o-o;k++, i++)
-           printf("%c~ ",a[i][t-1-o]);
-    }}
-      // last row
-    if(i==q &&j==w-o){
-        j-=2; i--;
+//            // last col
+//     if(i==o && j==w-o){
+//         i++;
+//          if(q>w){
+//         for(int k=0;k<t-1-o-o;k++, i++)
+//            printf("%c~ ",a[i][c-1-o]);}
+//         else{   
+//         for(int k=0;k<c-1-o-o;k++, i++)
+//            printf("%c~ ",a[i][t-1-o]);
+//     }}
+//       // last row
+//     if(i==q &&j==w-o){
+//         j-=2; i--;
         
-        for(int k=0;k<w-1-o-o;k++,--j)
-            printf("%c+ ",a[i][j]);
-    }
-    ///1st col
-    // if(o<c/2){
-        j++;i--;
-        for(int k=0;k<t-2-o-o;k++,--i)
-            printf("%c* ",a[i][j]);
-//   }
-    i++;j++;
-        o++;
-        }
-    return 0;
-}
+//         for(int k=0;k<w-1-o-o;k++,--j)
+//             printf("%c+ ",a[i][j]);
+//     }
+//     ///1st col
+//     // if(o<c/2){
+//         j++;i--;
+//         for(int k=0;k<t-2-o-o;k++,--i)
+//             printf("%c* ",a[i][j]);
+// //   }
+//     i++;j++;
+//         o++;
+//         }
+//     return 0;
+// }
+
+
+// #include <stdio.h>
+// int main() {
+//     // input 
+//     int q,w;
+//     printf("enter q ,w\n");
+//     scanf("%d%d",&q,&w);
+//     char a[q][w],i=0,j=0,o=0;
+//     printf("Enter elements of matrix\n");
+//     for (int i = 0; i < q; i++) 
+//         for (int j = 0; j < w; j++)
+//             scanf(" %c",&a[i][j]);  
+//     printf("\n");
+// int c=q<w?q:w;
+// int t=w>q?w:q;
+//     //printing
+//   while(o<5){  
+     
+//       //1st row
+//     if(i==o && j==o)
+//         for(int k=0;k<w-o-o;k++,j++)
+//             printf("%c! ",a[i][j]);
+
+//            // last col
+//     if(i==o && j==w-o){
+//         i++;
+//          if(q>w){
+//         for(int k=0;k<t-1-o-o;k++, i++)
+//            printf("%c~ ",a[i][c-1-o]);}
+//         else{   
+//         for(int k=0;k<c-1-o-o;k++, i++)
+//            printf("%c~ ",a[i][t-1-o]);
+//     }}
+//       // last row
+//     if(i==q-o &&j==w-o){
+//         j-=2; i--;
+//         for(int k=0;k<w-1-o-o;k++,--j)
+//             printf("%c+ ",a[i][j]);
+//     }
+//     ///1st col
+//     // if(q==w||o<c/2)
+//         j++; i--;
+//         for(int k=0;k<q-2-o-o;k++,i--)
+//             printf("%c* ",a[i][j]);
+//     i++;j++;
+//         o++;
+//         }
+//     return 0;
+// }
+
 
 
 #include <stdio.h>
@@ -362,37 +433,30 @@ int main() {
         for (int j = 0; j < w; j++)
             scanf(" %c",&a[i][j]);  
     printf("\n");
-int c=q<w?q:w;
-int t=w>q?w:q;
+
+    int c=q<w?q:w;
+    int t=w>q?w:q;
     //printing
-  while(o<5){  
-     
-      //1st row
-    if(i==o && j==o)
+    while(o<4){
         for(int k=0;k<w-o-o;k++,j++)
             printf("%c! ",a[i][j]);
-
-           // last col
-    if(i==o && j==w-o){
+            
         i++;
-         if(q>w){
-        for(int k=0;k<t-1-o-o;k++, i++)
-           printf("%c~ ",a[i][c-1-o]);}
-        else{   
-        for(int k=0;k<c-1-o-o;k++, i++)
-           printf("%c~ ",a[i][t-1-o]);
-    }}
-      // last row
-    if(i==q-o &&j==w-o){
+        if(q>w)
+            for(int k=0;k<t-1-o-o;k++, i++)
+                printf("%c~ ",a[i][c-1-o]);
+        else  
+            for(int k=0;k<c-1-o-o;k++, i++)
+                printf("%c~ ",a[i][t-1-o]);
+
         j-=2; i--;
         for(int k=0;k<w-1-o-o;k++,--j)
             printf("%c+ ",a[i][j]);
-    }
-    ///1st col
-    if(q==w||o<c/2)
+
         j++; i--;
         for(int k=0;k<q-2-o-o;k++,i--)
             printf("%c* ",a[i][j]);
+            
     i++;j++;
         o++;
         }
