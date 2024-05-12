@@ -128,15 +128,73 @@
 //     printf("symmetric matrix");
 // }
 // Write a program to add two 6 x 6 matrices.
+// #include<stdio.h>
+// int main(){
+//     int a[6][6],b[6][6];
+//     printf("Enter elements of 1st matrix\n");
+//     for(int i=0;i<6;i++)
+//         for(int j=0;j<6;j++)
+//             scanf("%d",&a[i][j]);
+//     printf("Enter elements of 2nd matrix\n");
+//     for(int i=0;i<6;i++)
+//         for(int j=0;j<6;j++)
+//             scanf("%d",&b[i][j]);
+//     printf("Sum of matrix\n");
+//     for(int i=0;i<6;i++){
+//         for(int j=0;j<6;j++)
+//             printf("%d ",a[i][j]+=b[i][j]);
+//         printf("\n");}
+            
+// }
 
 // Write a program to multiply any two 3 x 3 matrices.
+// #include<stdio.h>
+// int main(){
+//     int a[3][3],b[3][3],c[3][3];
+//     printf("Enter elements of 1st matrix\n");
+//     for(int i=0;i<3;i++)
+//         for(int j=0;j<3;j++)
+//             scanf("%d",&a[i][j]);
+//     printf("Enter elements of 2nd matrix\n");
+//     for(int i=0;i<3;i++)
+//         for(int j=0;j<3;j++)
+//             scanf("%d",&b[i][j]);
+
+//     for(int i=0;i<3;i++)
+//         for(int j=0;j<3;j++){
+//             c[i][j]=0
+//             for(int k=0;k<3;k++)
+//                 c[i][j]+=a[i][k]*b[k][j];
+//             }
+//     for(int i=0;i<3;i++){
+//         for(int j=0;j<3;j++)
+//             printf("%d ",c[i][j]);
+//         printf("\n");
+//     }
+// }
 
 // Given an array p[5], write a function to shift it circularly left by two positions. 
 // Thus, if p[0]= 15, p[1]= 30, p[2] = 28, p[3]= 19 and p[4] = 61 then after the 
 //    shift p[0]= 28, p[1]= 19, p[2] = 61, p[3]= 15 and p[4] = 30 
 //    Call this function for a(4 * 5) matrix and get its rows left shifted.
 
-// A 6 * 6 matrix is entered through the keyboard. Write a program to obtain the Determinant value of this matrix.
+// A 6 * 6 matrix is entered through the keyboard.
+// Write a program to obtain the Determinant value of this matrix.
+// #include<stdio.h>
+// int main(){
+//     int a[6][6],b;
+//     printf("Enter elements of 1st matrix\n");
+//     for(int i=0;i<3;i++)
+//         for(int j=0;j<3;j++)
+//             scanf("%d",&a[i][j]);
+   
+//     printf("Sum of matrix\n");
+//    b=a[0][0] *(a[1][1]*a[2][2] - a[1][2]*a[2][1]) -
+//    a[0][1] *(a[1][0]*a[2][2] - a[1][2]*a[2][0]) + 
+//    a[0][2] *(a[1][0]*a[2][1] - a[1][1]*a[2][0]);
+//             printf("\n%d\n",b);
+// }
+
 
 // For the following set of sample data, compute the standard deviation and the mean.
 // -6, -12, 8, 13, 11, 6, 7, 2, -6, -9, -10, 11, 10, 9, 2
