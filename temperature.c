@@ -63,3 +63,31 @@ int main(){
     printf("%f",c);
     return 0;    
 }*/
+
+
+
+
+
+
+#include<stdio.h>
+#include<limits.h>
+int main(){
+	int a,b;
+	int arr[]={1,7,3,4,10,6};
+	int mx=INT_MIN;
+	for(int i=0;i<7;i++){
+		if(mx<arr[i]){
+		    a=mx;
+            b=mx;
+			mx=arr[i];
+			}
+		else if(arr[i]!=mx && arr[i]>a){
+	        a=arr[i];
+        }
+        else if(arr[i]<mx || arr[i]<a &&arr[i]>b){ 
+            b=arr[i];}
+    }
+		printf("%d largest\n",mx);
+		printf("%d second largest\n",a);
+        printf("%d third largest",b);
+	return 0;}
