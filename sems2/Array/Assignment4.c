@@ -195,22 +195,24 @@
 //output-> 1
 // 1 2 3 4 5 8 = 6
 
-// #include<stdio.h>
-// int main(){
-//     int a[]= {1,2,3,4,5};
-//     int n=sizeof(a)/sizeof(int);
-//     int i=a[0],s=0,f=0;
+#include<stdio.h>
+int main(){
+    int a[]={-5,-1,1, 2, 3, 4, 6 };
+    int n=sizeof(a)/sizeof(int);
+    int s,f=1;
 
-//     for(i=a[0],s=0;i<a[n-1];i++,s++)
-//         if(a[s]>0){
-//             if(a[s]==1&&f==0) f=1;
-//             else if(f==0) break;
-//         if(a[s]<=a[s+1]&&a[s+1]!=a[s]+1) break;
-//         }
-//     if(a[s]>0&&f==1)
-//         printf("%d",a[s]+1);
-//     else printf("1");
-// }
+    for(s=0;s<n+1;s++){
+        if(a[s]>0){
+            if(a[s]!=f) { 
+                printf("%d",f); 
+                break; 
+            }
+            f++;
+        }
+    }
+    if(s==n+1) printf("%d",f);
+}
+        
 
 
 //WAP to find the first non-repeating element in the array.
