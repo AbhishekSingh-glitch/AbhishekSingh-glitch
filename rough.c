@@ -1,4 +1,3 @@
-
 #include<stdio.h>
 int main(){
     int r,c;
@@ -25,3 +24,24 @@ int main(){
             printf("%d ",a[i][j]);
         printf("\n");}   
 }
+
+
+#include <stdio.h>
+int main() {
+    int a[5]={1,2,3,4,5};
+    int s=0,e=5-1,m,x;
+    scanf("%d",&x);
+    
+    while(s<=e){
+        m=(s+e)/2;
+        if(x<a[m])
+            e=m-1;
+        else if(x>a[m])
+            s=m+1;
+        else {
+            printf("element found at index=%d",m);
+            break;
+        }
+        }
+        if(s>e) printf("element not found");
+    }
