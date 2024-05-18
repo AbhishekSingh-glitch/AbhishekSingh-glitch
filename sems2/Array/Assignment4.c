@@ -197,7 +197,7 @@
 
 #include<stdio.h>
 int main(){
-    int a[]={-5,-1,1, 2, 3, 4, 6 };
+    int a[]={-5,-1,1, 2, 3, 4,6 };
     int n=sizeof(a)/sizeof(int);
     int s,f=1;
 
@@ -210,7 +210,6 @@ int main(){
             f++;
         }
     }
-    if(s==n+1) printf("%d",f);
 }
         
 
@@ -234,6 +233,22 @@ int main(){
 //     return 0;
 // }
 
+#include <stdio.h>
+int main() {
+    int i,j,n,c=0;
+    scanf("%d",&n); 
+    int a[n];
+    for(i=0;i<n;i++)
+    scanf("%d",&a[i]);
+    for(i=0;i<n;i++){
+        c=0;
+        for( j=0;j<n;j++)
+        if(a[i]==a[j]&&i!=j) c++;
+        if(c==0) break;
+    }
+    printf("%d",a[i]);
+    return 0;
+}
 //WAP to find and display all the common elements of two arrays 'nums1' and 'nums2'. Print -1 if there are no common elements.
 
 // #include <stdio.h>
