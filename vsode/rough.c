@@ -46,41 +46,83 @@
 //         if(s>e) printf("element not found");
 //     }
 
-#include <stdio.h>
-int main() {
-	int c,d;
-	printf("enter matrix size\n");
-	scanf("%d%d",&c,&d);
-  int a[c][d] ;
-printf("Enter elements of matrix\n");
-  for (int i = 0; i < c; i++) {
-    for (int j = 0; j < d; j++)
-     scanf("%d",&a[i][j]);
+// #include <stdio.h>
+// int main() {
+// 	int c,d;
+// 	printf("enter matrix size\n");
+// 	scanf("%d%d",&c,&d);
+//   int a[c][d] ;
+// printf("Enter elements of matrix\n");
+//   for (int i = 0; i < c; i++) {
+//     for (int j = 0; j < d; j++)
+//      scanf("%d",&a[i][j]);
  
-  }
+//   }
 
-  for (int i = 0; i < c; i++)
-    for (int j = 0; j < i; j++) {
-      int temp = a[i][j];
-      a[i][j] = a[j][i];
-      a[j][i] = temp;
-    }
+//   for (int i = 0; i < c; i++)
+//     for (int j = 0; j < i; j++) {
+//       int temp = a[i][j];
+//       a[i][j] = a[j][i];
+//       a[j][i] = temp;
+//     }
     
 
-  for (int i = 0; i < c; i++)
-    for (int j = 0; j <=(d-1)/2; j++) {
+//   for (int i = 0; i < c; i++)
+//     for (int j = 0; j <=(d-1)/2; j++) {
     	
-      int temp = a[i][d-1-j];
-      a[i][d-1-j] = a[i][j];
-      a[i][j] = temp;
+//       int temp = a[i][d-1-j];
+//       a[i][d-1-j] = a[i][j];
+//       a[i][j] = temp;
       
      
+//     }
+
+//   printf("\n");
+//   for (int i = 0; i < c; i++) {
+//     for (int j = 0; j < d; j++)
+//       printf("%d ", a[i][j]);
+//     printf("\n");
+//   }
+// }
+
+
+#include <stdio.h>
+
+int main() 
+{
+    
+  int  a[2] = {1,3},b[1] = {2};
+  int n=sizeof(a)/sizeof(int);
+  int m=sizeof(b)/sizeof(int);
+  int c[n+m],k=0,i=0,j=0;
+  float q,w;
+    while(i<n&&j<m){
+        if(a[i]<b[j]) {
+            c[k]=a[i];
+            i++;}
+        else{
+            c[k]=b[j];
+            j++;}
+        ++k;
     }
 
-  printf("\n");
-  for (int i = 0; i < c; i++) {
-    for (int j = 0; j < d; j++)
-      printf("%d ", a[i][j]);
-    printf("\n");
-  }
+    while(i<n){
+        c[k]=a[i];
+        i++;
+        k++;
+    }
+    while(j<m){
+        c[k]=b[j];
+        j++;
+        ++k;
+    }
+    i=0,j=n+m-1;
+    while(i<=j){
+        q=c[i];
+        w=c[j];
+        i++;
+        j--;
+    }
+    q=(q+w)/2;
+    printf("%f",q);
 }
