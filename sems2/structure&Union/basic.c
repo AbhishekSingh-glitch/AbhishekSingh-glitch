@@ -4,7 +4,7 @@ int main(){
         int r;
         char n[20];
     } a;
-    scanf("%d",&a.r);
+    scanf("%d ",&a.r);
     scanf("%[^\n]s",a.n);    //%[^\n]s ,so string can take spaces too
-    printf("%d%s",a.r,a.n);
+    printf("%d\n%s",a.r,a.n);
 }
