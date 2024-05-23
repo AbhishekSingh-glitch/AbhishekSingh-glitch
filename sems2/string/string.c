@@ -1,4 +1,4 @@
-// collection of only char dat type
+// collection of only char data type ,ends with '\0'
 /*
 #include <stdio.h>
 #include <string.h>
