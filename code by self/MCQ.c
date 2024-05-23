@@ -10,12 +10,12 @@ int main() {
     while(i<n){
     printf("%s\n",ques[i]);
     scanf("%d",&ans[i]);
-    // i++;
-    // } 
-    // i=0;
-    // while(i<n){
+    i++;
+    } 
+    i=0;
+    while(i<n){
         if(rian[i]!=ans[i]){
-            printf("%d\n",rian[i]);
+            printf("\n%s\n%d right answer\n",ques[i],rian[i]);
         }
         
         i++;
