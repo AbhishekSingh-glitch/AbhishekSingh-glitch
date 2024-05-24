@@ -1,31 +1,3 @@
-// #include<stdio.h>
-// int main(){
-//     int r,c;
-//     printf("enter the size of the matrix\n");
-//     scanf("%d%d",&r,&c);
-//     int a[r][c],i,j,t,t2;
-
-//     for(int i=0;i<r;i++)
-//         for(int j=0;j<c;j++)
-//             scanf("%d",&a[i][j]);
-
-//     for( i=0;i<r*c;i++){
-//         if(a[0][i]==0)
-//         t=i;
-//         for(int j=0;j<c;j++){
-//             a[j][i]=0;
-//             a[t][j]=9;
-//         }
-//     }
-
-//         printf("\n");
-//     for(i=0;i<r;i++) { 
-//         for(j=0;j<c;j++) 
-//             printf("%d ",a[i][j]);
-//         printf("\n");}   
-// }
-
-
 // #include <stdio.h>
 // int main() {
 //     int a[5]={1,2,3,4,5};
@@ -42,9 +14,9 @@
 //             printf("element found at index=%d",m);
 //             break;
 //         }
-//         }
-//         if(s>e) printf("element not found");
 //     }
+//         if(s>e) printf("element not found");
+// }  // binary search
 
 // #include <stdio.h>
 // int main() {
@@ -78,24 +50,22 @@
 //     }
 
 //   printf("\n");
-//   for (int i = 0; i < c; i++) {
-//     for (int j = 0; j < d; j++)
-//       printf("%d ", a[i][j]);
+//   for (int i = 0; i < d; i++) {
+//     for (int j = 0; j < c; j++)
+//       printf("%d ", a[j][i]);
 //     printf("\n");
 //   }
-// }
+// } // trying to rotate rectangle matrix
 
 
 // #include <stdio.h>
 
 // int main() 
 // {
-    
-//   int  a[2] = {1,3},b[1] = {2};
-//   int n=sizeof(a)/sizeof(int);
-//   int m=sizeof(b)/sizeof(int);
-//   int c[n+m],k=0,i=0,j=0;
-//   float q,w;
+//     int  a[2] = {1,3},b[1] = {2},n=sizeof(a)/sizeof(int),
+//     m=sizeof(b)/sizeof(int),
+//     c[n+m],k=0,i=0,j=0;
+//     float q,w;
 //     while(i<n&&j<m){
 //         if(a[i]<b[j]) {
 //             c[k]=a[i];
@@ -125,61 +95,59 @@
 //     }
 //     q=(q+w)/2;
 //     printf("%f",q);
+// }  // medimum of 2 sorted array
+
+// #include <stdio.h>
+// int isValid(char *s,int n) {
+//     int c,h=0;
+//     for(int i=0;i<n;i++){
+//         c=0;
+//         for(int j=0;j<n;j++)
+//             if( s[i]=='('&&s[j]==')'||s[i]=='{'&&s[j]=='}'||s[i]=='['&&s[j]==']'&&i!=j
+//             ||s[j]=='('&&s[i]==')'||s[j]=='{'&&s[i]=='}'||s[j]=='['&&s[i]==']'){
+//                 printf("%c",s[i]);
+//                 c++;
+//             }
+//         if(c==0) break;
+//     }
+//     if(c==0) 
+//     return 0;
+//     else
+//     return 1;
 // }
-
-#include <stdio.h>
-int isValid(char *s,int n) {
-    int c,h=0;
-    for(int i=0;i<n;i++){
-        c=0;
-        for(int j=0;j<n;j++)
-            if( s[i]=='('&&s[j]==')'||s[i]=='{'&&s[j]=='}'||s[i]=='['&&s[j]==']'&&i!=j
-            ||s[j]=='('&&s[i]==')'||s[j]=='{'&&s[i]=='}'||s[j]=='['&&s[i]==']'){
-                printf("%c",s[i]);
-                c++;
-            }
-        if(c==0) break;
-    }
-    if(c==0) 
-    return 0;
-    else
-    return 1;
-}
-int main() {
-    char t[]= "{[]}";
-    int n=sizeof(t)-1;
-    for(int i=0;i<n;i++)
-    printf("%c",t[i]);
-printf("\n");
-    int g=isValid(t,n);
-    printf("\n%d",g);
-    return 0;
-}
+// int main() {
+//     char t[]= "{[]}";
+//     int n=sizeof(t)-1;
+//     for(int i=0;i<n;i++)
+//     printf("%c",t[i]);
+// printf("\n");
+//     int g=isValid(t,n);
+//     printf("\n%d",g);
+//     return 0;
+// }  //checking braces if open ,then closed or not
 
 
-char* triangleType(int* s) {
+// char* triangleType(int* s) {
     
-    if (s[0] + s[1] > s[2] && s[1] + s[2] > s[0] && s[0] + s[2] > s[1]) {
-    // printf("it can be a");
-    if (s[0] == s[1] && s[0] == s[2] && s[2] == s[1])
-       return 'e';
-    else if (s[0] == s[1] || s[1] == s[2] || s[0] == s[2])
-       return 'i';
-    else
-       return 's';
-  }
-  else {
-     return 0;
-  }
+//     if (s[0] + s[1] > s[2] && s[1] + s[2] > s[0] && s[0] + s[2] > s[1]) {
+//     // printf("it can be a");
+//     if (s[0] == s[1] && s[0] == s[2] && s[2] == s[1])
+//        return 'e';
+//     else if (s[0] == s[1] || s[1] == s[2] || s[0] == s[2])
+//        return 'i';
+//     else
+//        return 's';
+//   }
+//   else {
+//      return 0;
+//   }
   
-}
-#include <stdio.h>
+// }
+// #include <stdio.h>
 
-int main() {
-  int s[3];
-  printf("Enter 3 no. ");
-  scanf("%d%d%d", &s[0], &s[1], &s[2]);
-  printf("%c",triangleType( s));
-  
-  
-}
+// int main() {
+//   int s[3];
+//   printf("Enter 3 no. ");
+//   scanf("%d%d%d", &s[0], &s[1], &s[2]);
+//   printf("%c",triangleType( s));
+// } // triangle validity check
