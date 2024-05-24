@@ -3,10 +3,10 @@
 #include<stdlib.h>
 int main()
 {
-int a,c;
+int a,c=0;
 srand(time(0));
 
-while(c!=5){
+while(c<6){
 a=rand()%26+1;
 switch(a){
     case 1:
