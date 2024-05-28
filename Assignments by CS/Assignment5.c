@@ -250,35 +250,35 @@
 // }
 
 
-#include<stdio.h>
-int main(){
-    int r,c;
-    printf("enter the size of the matrix\n");
-    scanf("%d%d",&r,&c);
-    int a[r][c],i,j,t,t2;
+// #include<stdio.h>
+// int main(){
+//     int r,c;
+//     printf("enter the size of the matrix\n");
+//     scanf("%d%d",&r,&c);
+//     int a[r][c],i,j,t,t2;
 
-    for(int i=0;i<r;i++)
-        for(int j=0;j<c;j++)
-            scanf("%d",&a[i][j]);
+//     for(int i=0;i<r;i++)
+//         for(int j=0;j<c;j++)
+//             scanf("%d",&a[i][j]);
 
-    for( i=0;i<r;i++){
-        for( j=0;j<c;j++)
-            if(a[i][j]==0){
-                t=i;
-                t2=j;
-        for(int k=0;k<r;k++)  
-        for(int l=0;l<c;l++)  {   
-            a[t][l]=0; 
-            a[k][t2]=0; }
-            }
-    }
+//     for( i=0;i<r;i++){
+//         for( j=0;j<c;j++)
+//             if(a[i][j]==0){
+//                 t=i;
+//                 t2=j;
+//         for(int k=0;k<r;k++)  
+//         for(int l=0;l<c;l++)  {   
+//             a[t][l]=0; 
+//             a[k][t2]=0; }
+//             }
+//     }
 
-        printf("\n");
-    for(i=0;i<r;i++) { 
-        for(j=0;j<c;j++) 
-            printf("%d ",a[i][j]);
-        printf("\n");}   
-}
+//         printf("\n");
+//     for(i=0;i<r;i++) { 
+//         for(j=0;j<c;j++) 
+//             printf("%d ",a[i][j]);
+//         printf("\n");}   
+// }
 
 // 9 WAP to displays the elements of middle row and the elements of middle column.
 // [Assuming the 2D Array to be a square matrix with odd dimensions i.e. 3x3, 5x5, 7x7 etc...]
@@ -338,3 +338,33 @@ int main(){
 //         printf("\n");
 //     }
 // }
+
+// OR   wrong om\nly work for 3x3
+// #include<stdio.h>
+// int main(){
+//     int r=3,c=3;  //u can scan r,\& c too
+//     int a[][3]={9,8,7,
+//                 5,4,6, 
+//                 1,2,3}; // and also can take element too
+
+//     int i=0,j=r-1,t=0;
+//     while(t<c){
+//         i=0;j=r-1;
+//         if(a[i][t]>a[j][t]){
+//             int temp=a[i][t];
+//             a[i][t]=a[j][t];
+//             a[j][t]=temp;
+//         }
+//         i++;
+//         j--;
+//         t++;
+//     }
+                
+//     printf("\n");
+//     for(int i=0;i<r;i++){
+//         for(int j=0;j<c;j++)
+//             printf("%d ",a[i][j]);
+//         printf("\n");
+//     }
+// }
+
