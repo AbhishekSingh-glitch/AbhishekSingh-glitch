@@ -462,3 +462,39 @@ int main() {
         }
     return 0;
 }
+
+
+
+// mul of 2 matrix
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int r,c;
+    scanf("%d%d",&r,&c);
+    int a[r][c],b[r][c],c1[r][c];
+    for(int i=0;i<r;i++)
+        for(int j=0;j<c;j++)
+            scanf("%d",&a[i][j]);
+            
+     for(int i=0;i<r;i++)
+        for(int j=0;j<c;j++)
+            scanf("%d",&b[i][j]);    
+            
+    for(int i=0;i<r;i++){
+        for(int j=0;j<c;j++){
+            c1[i][j]=0;
+            for(int k=0;k<c;k++){
+                c1[i][j]+= a[i][k]*b[k][j];
+            }
+        }
+    }
+    
+    for(int i=0;i<r;i++){
+        for(int j=0;j<c;j++)
+        printf("%d ",c1[i][j]);
+        printf("\n");
+    }
+    
+    return 0;
+}
