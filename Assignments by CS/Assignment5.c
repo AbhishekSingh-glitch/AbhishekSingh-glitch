@@ -3,9 +3,12 @@
 // int main(){
 //     int a[5][5];
 //     for(int i=0;i<5;i++){
-//         for(int j=0;j<5;j++)
-//             printf("%d ",a[i][j]=10);
-//         printf("\n");}
+//         for(int j=0;j<5;j++){
+//             a[i][j]=10;
+//             printf("%d ",a[i][j]);
+//         }
+//         printf("\n");
+//     }
 // }
 
 // 2 WAP to add two matrices and save the result in one of the given matrices. 
