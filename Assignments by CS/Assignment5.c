@@ -44,7 +44,49 @@
 // Output 1: -4
 // Sample input 2: 2: l1 = 1, r1 = 0 , l2 = 0 , r2 = 3
 // Output 2:  2   
+//  1  2 -3 4
+//  0  0 -4 2
+//  1 -1  2 3
+// -4 -5 -7 0
 
+// #include<stdio.h>
+// int main(){
+
+// // row and col
+//     int row,col;
+//     printf("Enter row and columun\n"); 
+//     scanf("%d%d",&row,&col);
+
+// // matrix input
+//     int array[row][col];
+//     printf("Enter the elements of array\n");
+//     for(int i=0;i<row;i++){
+//         for(int j=0;j<col;j++){
+//             scanf("%d",&array[i][j]);
+//         }
+//     }
+// // taking coordinates
+//     int r1,c1,  r2,c2, sum=0;
+//     printf("Enter r1,c1\n"); 
+//     scanf("%d%d",&r1,&c1);
+//     printf("Enter r2,c2\n"); 
+//     scanf("%d%d",&r2,&c2);
+// // main logic
+//     int maxofr= r1>r2?r1:r2; 
+//     int maxofc= c1>c2?c1:c2;
+//     int minofr= r1>r2?r2:r1; 
+//     int minofc= c1>c2?c2:c1;
+
+//     for(int i=0;i<row;i++ ){
+//         for(int j=0;j<col;j++ ){
+//             if(i>=minofr && j>=minofc && i<=maxofr && j<=maxofc){ // this one
+//                 sum+=array[i][j];
+//             }
+//         }
+//     }
+// // printing 
+//     printf("\n%d",sum);
+// }
 
 
 
