@@ -1,8 +1,8 @@
 #include<stdio.h>
 int main(){
     int f=0,md[]={31,29,31,30,31,30,31,31,30,31,30,31};
-    char mn[][10]={"January", "February", "March","April", "May", "June",
-                 "July", "August", "September", "October","November","December"};
+    char mn[][10]={"January","February","March","April","May","June",
+                 "July","August","September","October","November","December"};
     char w[]="SMTWtFs";
 
     for(int m=0;m<12;m++){
