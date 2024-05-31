@@ -55,7 +55,8 @@ int main(){
     scanf("%d",&b);
     printf("Enter a no. ");
     scanf("%d",&c);
-    a=a>b&&a>c?a:b>a&&b>c?b:c;
+//    a=a>b&&a>c?a:b>a&&b>c?b:c;
+    a=a>=b&&a>=c?a:b>=a&&b>=c?b:c;
     printf("%d",a);
 //     if(a>b)
 //         if(a>c) printf("%d",a);
