@@ -39,10 +39,7 @@
 // }
 // int main()
 // {
-// 	int i,j,n;
-// 	scanf("%d",&n);
-// 	int d=1;
-// 	while(d){
+// 	while(1){
 // 		csleep(30);
 // 		system("cls");
 // 		printf("\n___");
