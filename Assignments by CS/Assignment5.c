@@ -88,46 +88,46 @@
 // }
 
 //OR
-#include<stdio.h>
+// #include<stdio.h>
 
-int max(int a,int b){
-    return (a>b?a:b);
-}
-int min(int a,int b){
-    return (a<b?a:b);
-}
+// int max(int a,int b){
+//     return (a>b?a:b);
+// }
+// int min(int a,int b){
+//     return (a<b?a:b);
+// }
 
-int main(){
+// int main(){
 
-// row and col
-    int row,col;
-    printf("Enter row and columun\n"); 
-    scanf("%d%d",&row,&col);
+// // row and col
+//     int row,col;
+//     printf("Enter row and columun\n"); 
+//     scanf("%d%d",&row,&col);
 
-// matrix input
-    int array[row][col];
-    printf("Enter the elements of array\n");
-    for(int i=0;i<row;i++){
-        for(int j=0;j<col;j++){
-            scanf("%d",&array[i][j]);
-        }
-    }
-// taking coordinates
-    int r1,c1,  r2,c2, sum=0;
-    printf("Enter r1,c1\n"); 
-    scanf("%d%d",&r1,&c1);
-    printf("Enter r2,c2\n"); 
-    scanf("%d%d",&r2,&c2);
-// main logic
+// // matrix input
+//     int array[row][col];
+//     printf("Enter the elements of array\n");
+//     for(int i=0;i<row;i++){
+//         for(int j=0;j<col;j++){
+//             scanf("%d",&array[i][j]);
+//         }
+//     }
+// // taking coordinates
+//     int r1,c1,  r2,c2, sum=0;
+//     printf("Enter r1,c1\n"); 
+//     scanf("%d%d",&r1,&c1);
+//     printf("Enter r2,c2\n"); 
+//     scanf("%d%d",&r2,&c2);
+// // main logic
 
-    for(int i=min(r1,r2);i<=max(r1,r2);i++ ){
-        for(int j=min(c1,c2);j<=max(c1,c2);j++ ){
-                sum+=array[i][j];
-        }
-    }
-// printing 
-    printf("\n%d",sum);
-}
+//     for(int i=min(r1,r2);i<=max(r1,r2);i++ ){
+//         for(int j=min(c1,c2);j<=max(c1,c2);j++ ){
+//                 sum+=array[i][j];
+//         }
+//     }
+// // printing 
+//     printf("\n%d",sum);
+// }
 
 // 4 Write a program to find the largest element of a given 2D array of integers.
 // #include<stdio.h>
@@ -301,68 +301,34 @@ int main(){
 //     [0,0,0],
 //     [1,0,1]]
 
-// #include<stdio.h>
-// int main(){
-//     int r,c;
-//     printf("enter the size of the matrix\n");
-//     scanf("%d%d",&r,&c);
-//     int a[r][c],i,j,t,t2,l;
 
-//     for(int i=0;i<r;i++)
-//         for(int j=0;j<c;j++)
-//             scanf("%d",&a[i][j]);
+#include<stdio.h>
+int main(){
+    int r,c;
+    printf("enter the size of the matrix\n");
+    scanf("%d%d",&r,&c);
+    int a[r][c],t,t2;
 
-//     for( i=0;i<r;i++){
-//         for( j=0;j<c;j++)
-//             if(a[i][j]==0){
-//                 l=1;
-//                 break;
-//             }
-//             if(l==1) break;}
-//     t=i;
-//     t2=j;
-//     for(i=0;i<r;i++)  
-//         for(j=0;j<c;j++)  {   
-//            a[t][j]=0; 
-//            a[i][t2]=0; }
+    for(int i=0;i<r;i++)
+        for(int j=0;j<c;j++){
+            scanf("%d",&a[i][j]);
+            if(a[i][j]==0)
+                t=i;
+                t2=j;
+            }
+    
+    for(int i=0;i<r;i++)  
+        for(int j=0;j<c;j++){   
+            a[t][j]=0; 
+            a[i][t2]=0; 
+        }
 
-//         printf("\n");
-//     for(i=0;i<r;i++) { 
-//         for(j=0;j<c;j++) 
-//             printf("%d ",a[i][j]);
-//         printf("\n");}   
-// }
-
-
-// #include<stdio.h>
-// int main(){
-//     int r,c;
-//     printf("enter the size of the matrix\n");
-//     scanf("%d%d",&r,&c);
-//     int a[r][c],i,j,t,t2;
-
-//     for(int i=0;i<r;i++)
-//         for(int j=0;j<c;j++)
-//             scanf("%d",&a[i][j]);
-
-//     for( i=0;i<r;i++){
-//         for( j=0;j<c;j++)
-//             if(a[i][j]==0){
-//                 t=i;
-//                 t2=j;
-//         for(int k=0;k<r;k++)  
-//         for(int l=0;l<c;l++)  {   
-//             a[t][l]=0; 
-//             a[k][t2]=0; }
-//             }
-//     }
-
-//         printf("\n");
-//     for(i=0;i<r;i++) { 
-//         for(j=0;j<c;j++) 
-//             printf("%d ",a[i][j]);
-//         printf("\n");}   
-// }
+    printf("\n");
+    for(int i=0;i<r;i++) { 
+        for(int j=0;j<c;j++) 
+            printf("%d ",a[i][j]);
+        printf("\n");}   
+}
 
 // 9 WAP to displays the elements of middle row and the elements of middle column.
 // [Assuming the 2D Array to be a square matrix with odd dimensions i.e. 3x3, 5x5, 7x7 etc...]
@@ -408,8 +374,8 @@ int main(){
 //            scanf("%d",&a[i][j]);
 
 //     for(int i=0;i<c;i++)
-//         for(int j=0;j<=r/2;j++)
-//             for(int k=r-1; k>=j;k--)
+//         for(int j=0;j<=r/2;j++)       //for(int j=0; j<r-1;j++)
+//             for(int k=r-1; k>=j;k--)  //for(int k=j+1; k<r;k++)
 //                 if(a[j][i]>a[k][i]){
 //                     int temp=a[j][i];
 //                     a[j][i]=a[k][i];
@@ -422,33 +388,3 @@ int main(){
 //         printf("\n");
 //     }
 // }
-
-// OR   wrong om\nly work for 3x3
-// #include<stdio.h>
-// int main(){
-//     int r=3,c=3;  //u can scan r,\& c too
-//     int a[][3]={9,8,7,
-//                 5,4,6, 
-//                 1,2,3}; // and also can take element too
-
-//     int i=0,j=r-1,t=0;
-//     while(t<c){
-//         i=0;j=r-1;
-//         if(a[i][t]>a[j][t]){
-//             int temp=a[i][t];
-//             a[i][t]=a[j][t];
-//             a[j][t]=temp;
-//         }
-//         i++;
-//         j--;
-//         t++;
-//     }
-                
-//     printf("\n");
-//     for(int i=0;i<r;i++){
-//         for(int j=0;j<c;j++)
-//             printf("%d ",a[i][j]);
-//         printf("\n");
-//     }
-// }
-
