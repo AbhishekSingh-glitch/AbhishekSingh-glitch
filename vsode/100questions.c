@@ -632,17 +632,26 @@ int main(){
     
 // 78 C Program to accept values into an array and print array in reverse and original format by using three different functions.
 #include<stdio.h>
+void in(int n,int a[n],int *i){
+    while(*i<n){
+        scanf("%d",&a[*i]);
+        (*i)++;
+    }
+}
+void pr(int n,int a[n],int *i){
+    while(*i>=0){
+        printf("%d ",a[*i]);
+        (*i)--;
+    }
+}
 int main(){
-    int a[]={1,2,3,4,5},i=0;
-    while(i<5){
-        scanf("%d",&a[i]);
-        i++;
-    }
-    i-=1;
-    while(i>=0){
-        printf("reverse\n%d\n",a[i]);
-        i--;
-    }
+    int n;
+    scanf("%d",&n);
+    int a[n],i=0;
+    in(n,a,&i);
+    i--;
+    printf("reverse\n");
+    pr(n,a,&i); 
 }
 // 79 C Program to Becept vilues into smale dimensional array and print the array in reverse by using pointers
     
