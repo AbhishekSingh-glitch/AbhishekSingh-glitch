@@ -9,8 +9,6 @@ void strrv(char *st, int y, int q) {
     char p = st[y];
     st[y] = st[q];
     st[q] = p;
-    ++y;
-    --q;
 }
 int main() {
     char str[1000] ;int y=0;
@@ -93,7 +91,6 @@ int main() {
 //  printf("%c", str[i]);}
 //  return 0;
 // }
-// or
 
 /*2 WAP to arrange each word of a sentence in alphabetic order.
 Example:
@@ -104,13 +101,16 @@ input: Tanay sings a song
 // alphabetical order logic
 void strrv(char *st, int y, int h) {
     for (int i = y; i < h; i++)
-        for (int j = i + 1; j <= h; j++)
+        for (int j = i + 1; j <= h; j++){
+            if(st[i]>='A'&&st[i]<='Z')
+                    st[i]+=32;
+        
             if (st[i] > st[j]) {
                 char te = st[i];
                 st[i] = st[j];
                 st[j] = te;
- 
             }
+        }
 }
 int main() {
     char str[1000] ;
@@ -126,44 +126,6 @@ int main() {
     puts(str);
     return 0;
 }
-
-// #include <stdio.h>
-
-// void strrv(char *st, int y, int h) {
-//     for(int i=y;i<h;i++)
-//     for(int j=i+1;j<=h;j++)
-//     if(st[i]>st[j]){
-//         char te= st[i];
-//         st[i]=st[j];
-//         st[j]=te;
-//     }
-// }
-// int main() {
-//     char str[1000] ;int y=0, h = 0;
-//     fgets(str,1000,stdin);
- 
-//     for (int q = 0; str[q] != '\0'; q++) {
-// if(h!=0)
-//  y = h+2;
-
-//  if (str[q+1] == ' '&&str[q]!=' ') {
-//  h = q ;
-//  strrv(str, y, h);
-
-//  } else if (str[ q+1] == '\0') {
-//  h = q;
-//  strrv(str, y, h);
-//  }
-//  }
-//  for(int i=0;str[i]!=0;i++){
-//  if(str[i]=='\n') i++;
- 
-//  printf("%c", str[i]);}
-//  return 0;
-// }
-
-// OR
-
 
 
 /*3 WAP that accepts a sentence from user and encrypts the sentence such that, the new sentence contains the reverse of each word.
@@ -296,7 +258,7 @@ int main() {
     for (int i = 0; s[i] != 0; i++)
         if (s[i] == 'a' || s[i] == 'A' || 
             s[i] == 'e' || s[i] == 'E' ||
-            s[i] == 'i' || s[i] == 'i' || 
+            s[i] == 'i' || s[i] == 'I' || 
             s[i] == 'o' || s[i] == 'O' ||
             s[i] == 'u' || s[i] == 'U') {
             h = i;
