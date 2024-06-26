@@ -81,7 +81,8 @@ int main(){
 
         // 3rd line
         for (int i = 10; i < 15; i++) {
-            if (w[4] == 1)   break;  hrz2++;
+            if (w[4] == 1)   break;  
+            if (bindup[i] == 0)hrz2++;
             if (hrz2 == 5){
                 r++;
                 printbingo(str, r);
