@@ -7,7 +7,7 @@ int main(){
     srand(time(NULL));
 
     int bin[25],cnt=0,t[25]={0},p=-1,no[25],q=0,bing[5][5],bindup[25];
-    int lfd = 0, rtd = 0, y = 0, r = -2, w[12] = {0};
+    int lfd = 0, rtd = 0, y = 0, r = -1, w[12] = {0};
     int vrt = 0, vrt1 = 0, vrt2 = 0, vrt3 = 0, vrt4 = 0;
     int hrz = 0, hrz1 = 0, hrz2 = 0, hrz3 = 0, hrz4 = 0;
     char str[6]={'\0'};
