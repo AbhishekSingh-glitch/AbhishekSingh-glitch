@@ -32,8 +32,9 @@
 
 //     for(int i=0;i<r;i++){
 //         printf("\n");
-//         for(int j=0;j<c;j++)
-//             printf("%d ",a[i][j]+=b[i][j]);
+//         for(int j=0;j<c;j++){
+//             a[i][j]+=b[i][j];
+//             printf("%d ",a[i][j]);}
 //         }
 // }
 
@@ -131,19 +132,20 @@
 
 // 4 Write a program to find the largest element of a given 2D array of integers.
 // #include<stdio.h>
+// #include<limits.h>
 // int main(){
 //     int r,c;
 //     printf("enter the size of the matrix\n");
 //     scanf("%d%d",&r,&c);
-//     int a[r][c],l;
+//     int a[r][c],l=INT_MIN;
 //     printf("enter the elements of 1st matrix\n");
 //     for(int i=0;i<r;i++)
-//         for(int j=0;j<c;j++)
+//         for(int j=0;j<c;j++){
 //            scanf("%d",&a[i][j]);
-//     l=a[0][0];
-//     for(int i=0;i<r;i++)
-//         for(int j=0;j<c;j++)
-//            if(l<a[i][j]) l=a[i][j];
+//     // l=a[0][0];
+//     // for(int i=0;i<r;i++)
+//     //     for(int j=0;j<c;j++)
+//            if(l<a[i][j]) l=a[i][j];}
 //     printf("largest element %d",l);
 // }
 
@@ -192,14 +194,42 @@
 
 //     for(int i=0;i<r;i++){
 //         l=0;
-//         for(int j=0;j<c;j++)
+//         for(int j=0;j<c;j++){
 //             l+=a[i][j];
-            
+//             if(i==0)
+//             s=l;}
 //         if(s<=l){ 
 //             s=l;
 //             printf("%d ",i);
 //         }  
 //     }
+// }
+//OR
+// #include<stdio.h>
+// int main(){
+//     int r,c;
+//     printf("enter the size of the matrix\n");
+//     scanf("%d%d",&r,&c);
+//     int a[r][c],l[r],s=0;
+//     printf("enter the elements of matrix\n");
+//     for(int i=0;i<r;i++)
+//         for(int j=0;j<c;j++)
+//            scanf("%d",&a[i][j]);
+           
+
+//     for(int i=0;i<r;i++){
+//         l[i]=0;
+//         for(int j=0;j<c;j++){
+//             l[i]+=a[i][j];
+//             if(s<l[i]) s=l[i];
+//     }
+//     }
+//     for(int i=0;i<r;i++) 
+//         if(s==l[i]){ 
+//            printf("%d ",i);
+            
+//         }  
+
 // }
 
 // 6 Write a program to print the elements of both the diagonals in a square matrix.
@@ -302,33 +332,30 @@
 //     [1,0,1]]
 
 
-#include<stdio.h>
-int main(){
-    int r,c;
-    printf("enter the size of the matrix\n");
-    scanf("%d%d",&r,&c);
-    int a[r][c],t,t2;
+// #include<stdio.h>
+// int main(){
+//     int r,c;
+//     printf("enter the size of the matrix\n");
+//     scanf("%d%d",&r,&c);
+//     int a[r][c],t,t2;
 
-    for(int i=0;i<r;i++)
-        for(int j=0;j<c;j++){
-            scanf("%d",&a[i][j]);
-            if(a[i][j]==0)
-                t=i;
-                t2=j;
-            }
+//     for(int i=0;i<r;i++)
+//         for(int j=0;j<c;j++){
+//             scanf("%d",&a[i][j]);
+//             if(a[i][j]==0)
+//                 t=i;
+//                 t2=j;
+//             }
     
-    for(int i=0;i<r;i++)  
-        for(int j=0;j<c;j++){   
-            a[t][j]=0; 
-            a[i][t2]=0; 
-        }
-
-    printf("\n");
-    for(int i=0;i<r;i++) { 
-        for(int j=0;j<c;j++) 
-            printf("%d ",a[i][j]);
-        printf("\n");}   
-}
+//     for(int i=0;i<r;i++)  {
+//         for(int j=0;j<c;j++){   
+//             a[t][j]=0; 
+//             a[i][t2]=0; 
+//             printf("%d ",a[i][j]);
+//         }
+//         printf("\n");
+//     }  
+// }
 
 // 9 WAP to displays the elements of middle row and the elements of middle column.
 // [Assuming the 2D Array to be a square matrix with odd dimensions i.e. 3x3, 5x5, 7x7 etc...]
