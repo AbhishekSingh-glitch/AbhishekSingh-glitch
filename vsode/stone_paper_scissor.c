@@ -6,13 +6,13 @@ int main()
 {
     char a;
     int b;
-    
-    printf("rock=R,paper=P,scissor=S\nchosse your option\n");
-    scanf("%c",&a);
-    printf("%c\n",a);
-    
     srand(time(NULL));
     b=rand()%3;
+    printf("rock=R,paper=P,scissor=S\nchosse your option\n");
+    scanf("%c",&a);
+    // printf("%c\n",a);
+    
+    
     if (b==0) printf("Rock\n");
     else if (b==1) printf("Paper\n");
     else printf("Scissor\n");

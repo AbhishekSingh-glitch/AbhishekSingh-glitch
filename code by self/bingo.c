@@ -2,12 +2,14 @@
 #include <time.h>
 #include <stdlib.h>
 void printbin(int *bin,int *t,int *bindup,int *cnt,int *p);
-char assigbingo(char *str,int r);
+char printbingo(char *str,int r);
 int main(){
     srand(time(NULL));
 
-    int lfd=0,rtd=0,y=0,r=-1,cnt=0,p=-1,q=0;
-    int bin[25],t[25]={0},no[25],bing[5][5],bindup[25],w[12]={0},vrt[5]={0},hrz[5]={0};
+    int bin[25],cnt=0,t[25]={0},p=-1,no[25],q=0,bing[5][5],bindup[25];
+    int lfd = 0, rtd = 0, y = 0, r = -1, w[12] = {0};
+    int vrt = 0, vrt1 = 0, vrt2 = 0, vrt3 = 0, vrt4 = 0;
+    int hrz = 0, hrz1 = 0, hrz2 = 0, hrz3 = 0, hrz4 = 0;
     char str[6]={'\0'};
 
     for (int i=0;i<25;i++){
@@ -30,125 +32,149 @@ int main(){
     // bingo print
         // for right side diagonal
         for (int i = 4; i < 21; i += 4){
+            if(w[0]==1)    break;
             if(bindup[i]==0)  rtd++;
-            if(rtd==5&&w[0]==0){
+            if(rtd==5){
                 r++;
-                assigbingo(str, r);
+                printbingo(str, r);
                 w[0] = 1;
+                break;
             }
         }    rtd = 0;
 
         // //for left side diagonal
         for (int i = 0; i < 25; i += 6){
+            if (w[1] == 1)    break;
             if (bindup[i] == 0)    lfd++;
-            if (lfd == 5&&w[1]==0){
+            if (lfd == 5){
                 r++;
-                assigbingo(str, r);
+                printbingo(str, r);
                 w[1] = 1;
+                break;
             }
         }    lfd = 0;
 
         // for horizontal
         // 1st line
         for (int i = 0; i < 5; i++){
-            if (bindup[i] == 0)    hrz[0]++;
-            if (hrz[0] == 5&&w[2]==0){
+            if (w[2] == 1)    break;
+            if (bindup[i] == 0)    hrz++;
+            if (hrz == 5){
                 r++;
-                assigbingo(str, r);
+                printbingo(str, r);
                 w[2] = 1;
+                break;
             }
-        }   hrz[0] = 0;
+        }   hrz = 0;
 
         // 2nd line
         for (int i = 5; i < 10; i++){
-            if (bindup[i] == 0)   hrz[1]++;
-            if (hrz[1] == 5&&w[3]==0){
+            if (w[3] == 1)    break;
+            if (bindup[i] == 0)   hrz1++;
+            if (hrz1 == 5){
                 r++;
-                assigbingo(str, r);
+                printbingo(str, r);
                 w[3] = 1;
+                break;
             }
-        } hrz[1] = 0;
+        } hrz1 = 0;
 
         // 3rd line
         for (int i = 10; i < 15; i++) {
-            if (bindup[i] == 0) hrz[2]++;
-            if (hrz[2] == 5&&w[4]==0){
+            if (w[4] == 1)   break;  
+            if (bindup[i] == 0)hrz2++;
+            if (hrz2 == 5){
                 r++;
-                assigbingo(str, r);
+                printbingo(str, r);
                 w[4] = 1;
+                break;
             }
-        } hrz[2] = 0;
+        } hrz2 = 0;
 
         // 4th line
         for (int i = 15; i < 20; i++){
-            if (bindup[i] == 0)  hrz[3]++;
-            if (hrz[3] == 5&&w[5]==0) {
+            if (w[5] == 1)  break;
+            if (bindup[i] == 0)  hrz3++;
+            if (hrz3 == 5) {
                 r++;
-                assigbingo(str, r);
+                printbingo(str, r);
                 w[5] = 1;
+                break;
             }
-        }  hrz[3] = 0;
+        }  hrz3 = 0;
 
         // 5th line
         for (int i = 20; i < 25; i++) {
-            if (bindup[i] == 0)  hrz[4]++;
-            if (hrz[4] == 5&&w[6]==0) {
+            if (w[6] == 1)  break;
+            if (bindup[i] == 0)  hrz4++;
+            if (hrz4 == 5) {
                 r++;
-                assigbingo(str, r);
+                printbingo(str, r);
                 w[6] = 1;
+                break;
             }
-        } hrz[4] = 0;
+        } hrz4 = 0;
 
         // for vertical
         // 1st line
         for (int i = 0; i < 21; i += 5) {
-            if (bindup[i] == 0) vrt[0]++;
-            if (vrt[0]== 5&&w[7]==0) {
+            if (w[7] == 1)   break;
+            if (bindup[i] == 0) vrt++;
+            if (vrt == 5) {
                 r++;
-                assigbingo(str, r);
+                printbingo(str, r);
                 w[7] = 1;
+                break;
             }
-        } vrt[0] = 0;
+        } vrt = 0;
 
         // 2nd line
         for (int i=1;i<22;i+=5){
-            if (bindup[i]==0)    vrt[2]++;
-            if (vrt[2]==5&&w[8]==0){
+            if (w[8]==1)    break;
+            if (bindup[i]==0)    vrt2++;
+            if (vrt2==5){
                 r++;
-                assigbingo(str, r);
+                printbingo(str, r);
                 w[8] = 1;
+                break;
             }
-        }  vrt[2] = 0;
+        }  vrt2 = 0;
 
         // 3rd line
         for (int i = 2; i < 23; i += 5){
-            if(bindup[i]==0)    vrt[1]++;
-            if(vrt[1]==5&&w[9]==0){
+            if(w[9]==1)    break;
+            if(bindup[i]==0)    vrt1++;
+            if(vrt1==5){
                 r++;
-                assigbingo(str, r);
+                printbingo(str, r);
                 w[9] = 1;
+                break;
             }
-        } vrt[1] = 0;
+        } vrt1 = 0;
 
         // 4th line
         for (int i=3;i<24;i+=5){
-            if(bindup[i]==0) vrt[3]++;
-            if(vrt[3]==5&&w[10]==0){
+            if(w[10]==1)     break;
+            if(bindup[i]==0) vrt3++;
+            if(vrt3==5){
                 r++;
-                assigbingo(str, r);
+                printbingo(str, r);
                 w[10] = 1;
+                break;
             }
-        } vrt[3] = 0;
+        } vrt3 = 0;
 
         // 5th line
         for (int i = 4; i < 25; i += 5){
-            if (bindup[i] == 0) vrt[4]++;
-            if (vrt[4] == 5&&w[11]==0){
+            if (w[11] == 1)      break;
+            if (bindup[i] == 0) vrt4++;
+            if (vrt4 == 5){
                 r++;
-                assigbingo(str, r);
+                printbingo(str, r);
                 w[11] = 1;
+                break;
             }
-        } vrt[4]=0;
+        } vrt4=0;
         
         puts(str);
 
@@ -178,7 +204,7 @@ void printbin(int *bin, int *t, int *bindup, int *cnt, int *p){
     }
 }
 
-char assigbingo(char *str, int r){
+char printbingo(char *str, int r){
     if(str[0]=='\0'&&r==0)                                       str[0]='B';
     if(str[0]=='B'&&r==1)                                        str[1]='I';
     if(str[0]=='B'&&str[1]=='I'&&r==2)                           str[2]='N';
