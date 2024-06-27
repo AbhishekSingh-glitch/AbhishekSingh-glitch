@@ -14,7 +14,12 @@ int main(){
     printf("\033[34mThis is a blue text \033[0m\n");
     printf("\033[35mThis is a pueple text\033[0m\n");
     printf("\033[36mThis is a cyan text \033[0m\n");
-    printf("%100s","This is a right aligned text\n");
 
+    printf("%100s","This is a right aligned text\n");
+    printf("%0100s","This is a right aligned text\n");
+    printf("%30s\n","ab");
+    printf("%10d\n",20);
+    printf("%010d\n",20);
+    
    
 }
