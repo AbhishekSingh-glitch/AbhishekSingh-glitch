@@ -179,9 +179,11 @@ void printbin(int *bin, int *t, int *bindup, int *p){
 }
 
 char printbingo(char *str, int r){
-    if(str[0]=='\0'&&r==0)                                       str[0]='B';
-    if(str[0]=='B'&&r==1)                                        str[1]='I';
-    if(str[0]=='B'&&str[1]=='I'&&r==2)                           str[2]='N';
-    if(str[0]=='B'&&str[1]=='I'&&str[2]=='N'&&r==3)              str[3]='G';
-    if(str[0]=='B'&&str[1]=='I'&&str[2]=='N'&&str[3]=='G'&&r==4) str[4]='O';
+    switch(r){
+  	  case 0: str[0]='B'; break;
+    case 1: str[1]='I'; break;
+    case 2: str[2]='N'; break;
+    case 3: str[3]='G'; break;
+    case 4: str[4]='O'; 
+    }
 }
