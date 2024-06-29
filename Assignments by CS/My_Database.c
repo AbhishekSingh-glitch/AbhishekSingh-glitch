@@ -30,6 +30,7 @@ int main(){
     }
     i = 0;
     printf("SL. No. Roll No. Name                Father's Name       Mother's Name       Marks\n");
+    fprintf(f,"SL. No. Roll No. Name                Father's Name       Mother's Name       Marks\n");
     while(i<1){
         printf("%03d    ",i+1);
         printf("%3d       ",s[i].rollNo);
