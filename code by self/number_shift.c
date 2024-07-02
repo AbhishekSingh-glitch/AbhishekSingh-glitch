@@ -30,7 +30,7 @@ void swpD(int *bin,int f){
 
 int find(int *bin){
     for(int j=0;j<16;j++)
-        if(bin[j]==0) return j;
+        if(bin[j]==16) return j;
 
 }
 
@@ -71,7 +71,7 @@ int main(){
 
            if(aeke=='s'||aeke=='S'){
                 f=find(bin);
-                if(!f>=12) {
+                if(!(f>=12)) {
                 swpS(bin,f);
                 q--;}
             }
