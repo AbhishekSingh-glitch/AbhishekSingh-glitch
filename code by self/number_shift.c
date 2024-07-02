@@ -51,15 +51,15 @@ int main(){
             if(bin[j]==ran) cnt++;
         if (cnt < 1){ 
             bin[i] = ran;
-            
         }
         if (cnt > 0)    i--;
     }
-    scanf("%c",&aeke);
+    scanf(" %c",&aeke);
 
     int f=-1,e,q=400;
     while(q){
         system("cls");
+        printf("remaining moves %d\n",q);
         for(int i=0;i<=15;i++){
             if(i%4==0&&i>0) printf("\n"); 
             if(bin[i]!=16)
@@ -79,8 +79,8 @@ int main(){
             if(aeke=='a'||aeke=='A'){
                 f=find(bin);
                 if(!(f%4==0)) {
-                swpA(bin,f);}
-                q--;
+                swpA(bin,f);
+                q--;}
             }
         
             if(aeke=='d'||aeke=='D'){
@@ -108,10 +108,10 @@ void game_rule(){
     int i,j;
     printf("\t\tRULE OF THIS GAME:\n\n");
     printf("1.You can move only 1 step at a time by arrow key\n");
-    printf("Move Up    : w\n");
-    printf("Move Down  : s\n");
-    printf("Move Left  : a\n");
-    printf("Move Right : d\n\n");
+    printf("Move Up    : w or W\n");
+    printf("Move Down  : s or S\n");
+    printf("Move Left  : a or A\n");
+    printf("Move Right : d or D\n\n");
     printf("2.You can move number at empty position only\n\n");
     printf("3.For each valid move : your total number of move will decreased by 1\n\n");
     printf("4.Wining situation : number in 4*4 matrix should be in order from 1 to 15\n\n");
