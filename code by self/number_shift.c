@@ -1,4 +1,3 @@
-// make input 
 #include<stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -30,8 +29,8 @@ void swpD(int *bin,int f){
 
 int find(int *bin){
     for(int j=0;j<16;j++)
-        if(bin[j]==16) return j;
-
+        if(bin[j]==16) 
+            return j;
 }
 
 int main(){
@@ -56,7 +55,7 @@ int main(){
     }
     scanf(" %c",&aeke);
 
-    int f=-1,e,q=400;
+    int f=-1,q=400;
     while(q){
         system("cls");
         printf("remaining moves %d\n",q);
@@ -65,6 +64,16 @@ int main(){
             if(bin[i]!=16)
                 printf("%d\t",bin[i]);
             else printf("  \t");
+        }
+        int y=0;
+        for (int i=0; i<15;i++){
+            if (bin[i]<bin[i + 1]){
+                y++;
+            }
+        }
+        if (y == 15){
+            printf("\nU won");
+            break;
         }
         printf("\nenter a no. ");
         scanf("%c",&aeke);
