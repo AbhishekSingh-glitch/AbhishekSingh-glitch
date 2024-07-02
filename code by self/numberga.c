@@ -109,8 +109,8 @@ int main(){
             if(aeke=='a'||aeke=='A'){
                 f=find(bin);
                 if(!(f%s==0)) {
-                swpA(bin,f);}
-                q--;
+                swpA(bin,f);
+                q--;}
             }
 
             // for right line
