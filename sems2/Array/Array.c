@@ -176,6 +176,27 @@
 // }
 // }
 
+// #include <stdio.h>
+// int main() {
+//     int b = 0, arr[10] ,n=10;
+//     for(int i=0;i<10;i++) scanf("%d",&arr[i]);
+//     for(int i=0; i<n; ++i){
+//         int j;
+//         for(j=0; j<i; ++j){
+//             if (arr[i] == arr[j]){
+//                 break;
+//             }
+//         }
+//         if(j != i) continue;
+//         for(j=i+1; j<n; ++j){
+//             if (arr[i] == arr[j]){
+//                 printf("%d ", arr[i]);
+//                 break;
+//             }
+//         }
+//     }
+// }
+
 // unique element      //wrong
 // #include <stdio.h>
 // int main() {
