@@ -69,12 +69,19 @@ int main(){
     while(q){
         system("cls");
         printf("remaining moves %d\n",q);
+        for(int i=0;i<s;i++)
+        printf("--------");
+        printf("-\n");
         for(int i=0;i<s*s;i++){
-            if(i%s==0&&i>0) printf("\n"); 
+            if(i%s==0&&i>0) printf("|\n"); 
             if(bin[i]!=s*s)
-                printf("%d\t",bin[i]);
-            else printf("  \t");
+                printf("|  %d\t",bin[i]);
+            else printf("|  \t");
         }
+        printf("|\n");
+        for(int i=0;i<s;i++)
+        printf("--------");
+        printf("-\n");
         int y=0;
         for (int i=0; i<s*s-1;i++){
             if (bin[i]<bin[i + 1]){
