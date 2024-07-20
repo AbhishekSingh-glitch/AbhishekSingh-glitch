@@ -327,20 +327,21 @@ notes.
 #include <stdio.h>
 int main() { 
     char s[1000];
-    int f=0;
+    int f=0,freq[26]={0};
     fgets(s,1000,stdin);
     for(int i=0;s[i]!=0;i++){
-        if(s[i]>='A'&&s[i]<='Z'||s[i]>='a'&&s[i]<='z'||s[i]==' '||s[i]=='\n') 
-            f++;
-        else{ 
-            printf("-%c-\n",s[i]); 
-            f=0; 
-            break;}
+        if(s[i]>='a'&&s[i]<='z')
+            freq[s[i]-97]++;
+        if(s[i]>='A'&&s[i]<='Z')
+            freq[s[i]-65]++;
     }
-    if(f==0) 
-        printf("is not a Pangram");
-    else   
+    for(int i=0;i<26;i++)
+        if(freq[i]>0) f++; 
+    
+    if(f==26) 
         printf("is a Pangram");
+    else   
+        printf("is not a Pangram");
 }
 
 /*10 WAP that swaps the contains of two strings.
@@ -380,7 +381,7 @@ int main() {
         a[q] = b[q];
         b[q] = s;
         q++;
-        //w++;
+        
     }
     printf("%s\n%s", a, b);
 }
