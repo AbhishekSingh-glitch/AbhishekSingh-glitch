@@ -58,13 +58,16 @@ int main(){
     int f=-1,q=400;
     while(q){
         system("cls");
-        printf("remaining moves %d\n",q);
+        printf("welcome %s  , remaining moves %d\n",name,q);
+        printf("-----------------------------\n");
         for(int i=0;i<=15;i++){
-            if(i%4==0&&i>0) printf("\n"); 
+            if(i%4==0&&i>0) printf("|\n"); 
             if(bin[i]!=16)
-                printf("%d\t",bin[i]);
-            else printf("  \t");
+                printf("|  %-2d  ",bin[i]);
+            else printf("|      ");
         }
+        printf("|\n-----------------------------\n\n");
+        
         int y=0;
         for (int i=0; i<15;i++){
             if (bin[i]<bin[i + 1]){
@@ -101,7 +104,7 @@ int main(){
             
             if(aeke=='w'||aeke=='W'){
                 f=find(bin);
-                if(!(f>=0&&f<=4)){
+                if(!(f>=0&&f<=3)){
                 swpW(bin,f);
                 q--;}
             }
