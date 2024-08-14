@@ -369,19 +369,11 @@ int main() {
     fgets(b, 1000, stdin);
     int i = 0, j = 0;
     while (a[i] != '\n' || b[j] != '\n') {
-        if (a[i] != '\n')
-            i++;
-        if (b[j] != '\n')
+        char s = a[i];
+        a[i] = b[j];
+        b[j] = s;
+        i++;
         j++;
-    }
-
-    int q =0;
-    while (q < i || q < j) {
-        char s = a[q];
-        a[q] = b[q];
-        b[q] = s;
-        q++;
-        
     }
     printf("%s\n%s", a, b);
 }
