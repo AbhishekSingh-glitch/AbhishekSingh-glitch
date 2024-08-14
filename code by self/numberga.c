@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<conio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <unistd.h>
@@ -63,8 +64,8 @@ int main(){
         if (cnt > 0)    i--;
     }
     game_rule();
-    scanf(" %c",&aeke);
-
+    //scanf(" %c",&aeke);
+    aeke=getch();
     int f=-1,e,q=100*s;
     while(q){
         system("cls");
@@ -92,8 +93,9 @@ int main(){
             printf("\nU won");
             break;
         }
-        printf("\nenter arrow ");
-        scanf("%c",&aeke);
+        // printf("\nenter arrow ");
+        //scanf("%c",&aeke);
+        aeke=getch();
         // system("cls");
         
             // for up line 
@@ -105,7 +107,7 @@ int main(){
             }
 
             // for down line
-            if(aeke=='s'||aeke=='S'){
+            else if(aeke=='s'||aeke=='S'){
                 f=find(bin);
                 if(!(f>=(s*(s-1))&&f<=(s*s)-1)) {
                 swpS(bin,f);
@@ -113,7 +115,7 @@ int main(){
             }
 
             // for left line
-            if(aeke=='a'||aeke=='A'){
+            else if(aeke=='a'||aeke=='A'){
                 f=find(bin);
                 if(!(f%s==0)) {
                 swpA(bin,f);
@@ -121,13 +123,13 @@ int main(){
             }
 
             // for right line
-            if(aeke=='d'||aeke=='D'){
+            else if(aeke=='d'||aeke=='D'){
                 f=find(bin);
                 if(!(rtside(f,s))){
                 swpD(bin,f);
                 q--;}
             }
-            if(aeke=='e'||aeke=='E') return 0;
+            else if(aeke=='e'||aeke=='E') return 0;
         
     }
 
