@@ -212,6 +212,22 @@
 //         c=a[j];
 //       }
 // }
+//unique
+
+// #include <stdio.h>
+// int main() {
+//     int a[] = {1, 1, 2, 56, 89, 56, 2, 31, 2, 89, 45, 34},
+//     i,j,n=sizeof(a)/sizeof(int),c=0;
+    
+//     for(i=0;i<n;i++){
+//         c=0;
+//         for( j=0;j<n;j++)
+//         if(a[i]==a[j]&&i!=j) c++;
+//         if(c==0) break;
+//     }
+//     printf("%d",a[i]);
+//     return 0;
+// }
 
 
 // checking array is sorted or not
