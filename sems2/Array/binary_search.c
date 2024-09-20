@@ -1,9 +1,10 @@
 #include<stdio.h>
 int main(){
-    int si,s=0,e=si-1,m,x;
+    int si,s=0,e,m,x;
     
     printf("enter size of array\n");
     scanf("%d",&si);
+    e=si-1;
     int a[si];
 
     printf("enter elements of array\n");
