@@ -1,63 +1,79 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void printbin(char *bin,int x,int y,int *t,int *t1);
+void assign(char* bin,int x,int y,int *t);
+void printbin(char *bin,int x,int y,int *t);
 int prir(char *bin,char s,char s2);
 int pril(char *bin,char s,char s2);
 int prih(char *bin,char s,char s2);
 int priv(char *bin,char s,char s2);
 int check(char* bin);
+int che(int n,int *t);
+
 int main(){
     char bin[9]={'\0'};
     int r=0;
-    int q=0,x=-1,t[9]={-1,-1,-1,-1,-1,-1,-1,-1,-1},y=-2,t1[9]={-1,-1,-1,-1,-1,-1,-1,-1,-1};
+    int q=0,x=-1,t[9]={-1,-1,-1,-1,-1,-1,-1,-1,-1},y=-2;
     system("cls");
-    printbin(bin,x,y,t,t1);
+    printbin(bin,x,y,t);
     while (q<9){
         while(1){
-        printf("\nenter no for X ");
-        scanf("%d",&x);
-        system("cls");
-        printbin(bin,x,y,t,t1);
-        if(y!=x) break;
+            printf("\nenter no for X ");
+            scanf("%d",&x);
+            system("cls");
+            int go=che(x,t);
+            printbin(bin,x,y,t);
+            if(go&&(x>0&&x<=9)){ x=0; break;}
         }
         r=check(bin);
-        if(r==1) return 0;
+        q++;
+        if(r==1||q>=8) break;
+        
         while(1){
-        printf("\nenter no for O ");
-        scanf("%d",&y);
-        system("cls");
-        printbin(bin,x,y,t,t1);
-        if(y!=x) break;
+            printf("\nenter no for O ");
+            scanf("%d",&y);
+            system("cls");
+            int go=che(y,t);
+            printbin(bin,x,y,t);
+            if(go&&(y>0&&y<=9)){ y=0; break;}
         }
         r= check(bin);
-        if(r==1) return 0;
+        if(r==1) break;
         q++;
+        
     }
+    if(q==9) printf("Draw\n");
 }
 int check(char* bin){
     int a=0;
     // for right side diagonal
     a= (prir(bin,'X','O'));
     if(a==1) return 1;
+
     // //for left side diagonal
-        a=(pril(bin,'X','O'));
+    a=(pril(bin,'X','O'));
     if(a==1) return 1;
+
     // for horizontal // 1st line
     a= (prih(bin,'X','O')); 
     if(a==1) return 1;
+
     // 2nd line
     a=(prih(bin,'X','O'));
     if(a==1) return 1;
+
     // 3rd line
     a=(prih(bin,'X','O'));
     if(a==1) return 1;
+
     // for vertical // 1st line
     a= (priv(bin,'X','O'));
     if(a==1) return 1;
+
     // 2nd line
     a= (priv(bin,'X','O'));
     if(a==1) return 1;
+
     // 3rd line
     a=(priv(bin,'X','O'));
     if(a==1) return 1;
@@ -148,21 +164,43 @@ int priv(char *bin,char s,char s2){
     } vrt = 0; vrt2 = 0;
 }
 
-void printbin(char *bin,int x,int y,int *t,int *t1){
+void printbin(char *bin,int x,int y,int *t){
     for (int i=0; i<9;i++){
         if (i%3==0 && i>1)  printf("\n");
         if(bin[i]=='X'||x==i+1&&y!=i+1){
-            bin[i]='X';
+            assign(bin,x,y,t);
             printf("\033[4m %c \033[0m", bin[i]);
-            t[i]=i;
         }
         else if(bin[i]=='O'||y==i+1&&x!=i+1){
-            bin[i]='O';
+            assign(bin,x,y,t);
             printf("\033[4m %c \033[0m", bin[i]);
-            t1[i]=i;
         }
-        else if(i<7) printf("\033[4m\033[2m %d \033[0m\033[0m",i+1);
-        else if(t1[i]<0) printf("\033[2m %d \033[0m",i+1);
+        else if(i<6) printf("\033[4m\033[2m %d \033[0m\033[0m",i+1);
+        else printf("\033[2m %d \033[0m",i+1);
         if(i==0||i==1||i==3||i==4||i==6||i==7) printf("|");  
     }
+}
+
+// assign value with check that it is a valid positon or not
+void assign(char* bin,int x,int y,int *t){
+
+    if (x > 0&&t[x-1]<0){
+        bin[x-1] ='X';
+        t[x-1] = x;
+    }
+    else if (y > 0&&t[y-1]<0){
+        bin[y-1] ='O';
+        t[y - 1] = y;
+    }
+}
+// checks that the entered position is free or not
+int che(int n,int *t){
+    int yes=0;
+    for(int i=0;i<9;i++){
+        if(n==t[i])
+        yes++;
+    }
+    if(yes)
+    return 0;
+    else return 1;
 }
