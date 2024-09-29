@@ -33,7 +33,7 @@ int main(){
         while(1){
             printf("\nenter no for O ");
             scanf("%d",&y);
-            ele=x-1;
+            ele=y-1;
             system("cls");
             int go=che(y,t);
             printbin(bin,x,y,t);
