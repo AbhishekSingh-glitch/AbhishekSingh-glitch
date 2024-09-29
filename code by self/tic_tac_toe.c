@@ -21,7 +21,7 @@ int main(){
             printf("\nenter no for X ");
             scanf("%d",&x);
             ele=x-1;
-            system("cls");
+            printf("\033[H\033[J"); 
             int go=che(x,t);
             printbin(bin,x,y,t);
             if(go&&(x>0&&x<=9)){ x=0; break;}
@@ -34,7 +34,7 @@ int main(){
             printf("\nenter no for O ");
             scanf("%d",&y);
             ele=y-1;
-            system("cls");
+            printf("\033[H\033[J"); 
             int go=che(y,t);
             printbin(bin,x,y,t);
             if(go&&(y>0&&y<=9)){ y=0; break;}
